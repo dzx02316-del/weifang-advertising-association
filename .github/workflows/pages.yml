@@ -19,12 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          # 排除 backend/node_modules 等大目录
-          sparse-checkout: |
-            .
-            !backend/node_modules
-            !backend/*.db
 
       - name: Create .nojekyll
         run: touch .nojekyll
