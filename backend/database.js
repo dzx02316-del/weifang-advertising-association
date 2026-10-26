@@ -2,7 +2,8 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const fs = require('fs');
 
-const DB_DIR = path.join(__dirname, 'data');
+// 支持持久化：通过 DATA_DIR 环境变量指向 Railway/Fly.io 的持久化卷
+const DB_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const DB_PATH = path.join(DB_DIR, 'cms.db');
 
 if (!fs.existsSync(DB_DIR)) {
