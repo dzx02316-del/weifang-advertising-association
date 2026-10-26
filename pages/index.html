@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潍坊市广告协会 - 首页</title>
+    <style id="theme-vars">
+/* ============================================================
+   潍坊市广告协会官网 — Brand CSS (科技蓝 / Tech Blue)
+   Single brand primary hue (blue) + tints, neutral scale, state colors.
+   Free-explore mode: no secondary/accent hue. Identity styling uses
+   primary tint, neutral tint, layout, and icons only.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Primary (tech blue) scale ---------- */
+  --wf-primary-50:  #ECF3FE;
+  --wf-primary-100: #D7E4FC;
+  --wf-primary-200: #B0C9FA;
+  --wf-primary-300: #82A8F4;
+  --wf-primary-400: #4F84EC;
+  --wf-primary-500: #1659D6;   /* brand primary */
+  --wf-primary-600: #1247AE;
+  --wf-primary-700: #0E3786;
+  --wf-primary-800: #0A2760;
+  --wf-primary-900: #07193D;
+
+  /* ---------- Neutral (slate) scale ---------- */
+  --wf-neutral-50:  #F6F8FC;
+  --wf-neutral-100: #EAEFF6;
+  --wf-neutral-200: #D5DEEC;
+  --wf-neutral-300: #B3C0D6;
+  --wf-neutral-400: #8493AE;
+  --wf-neutral-500: #5C6B85;
+  --wf-neutral-600: #44516A;
+  --wf-neutral-700: #2F3A4F;
+  --wf-neutral-800: #1C2536;
+  --wf-neutral-900: #0F1626;
+
+  /* ---------- Ink (deep navy for dark alternating sections) ---------- */
+  --wf-ink:    #0A1B3D;
+  --wf-ink-2:  #0F2547;
+  --wf-ink-3:  #16315C;
+
+  /* ---------- State colors (semantic status only) ---------- */
+  --state-success: #16A34A;
+  --state-warning: #D97706;
+  --state-error:   #DC2626;
+  --state-info:    #0EA5E9;
+
+  /* ---------- Semantic aliases (light) ---------- */
+  --wf-background: #FFFFFF;
+  --wf-foreground: #0F1626;
+  --wf-card: #FFFFFF;
+  --wf-card-foreground: #1C2536;
+  --wf-popover: #FFFFFF;
+  --wf-popover-foreground: #1C2536;
+  --wf-primary: var(--wf-primary-500);
+  --wf-primary-foreground: #FFFFFF;
+  --wf-muted: #F6F8FC;
+  --wf-muted-foreground: #5C6B85;
+  --wf-border: #E4EAF3;
+  --wf-input: #D5DEEC;
+  --wf-ring: var(--wf-primary-500);
+
+  /* ---------- Radius (restrained) ---------- */
+  --wf-radius-small: 4px;
+  --wf-radius-medium: 8px;
+  --wf-radius-large: 12px;
+  --wf-radius-full: 9999px;
+
+  /* ---------- Typography system ---------- */
+  --wf-font-display: "Sora", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* ---------- Layout rhythm ---------- */
+  --wf-container: 1200px;
+  --wf-section-pad-y: 88px;
+  --wf-section-gap: 64px;
+}
+
+/* ---------- Dark theme override (for .dark sections / dark mode) ---------- */
+.dark {
+  --wf-background: #0A1B3D;
+  --wf-foreground: #EAEFF6;
+  --wf-card: #0F2547;
+  --wf-card-foreground: #D5DEEC;
+  --wf-popover: #0F2547;
+  --wf-popover-foreground: #D5DEEC;
+  --wf-primary: #4F84EC;
+  --wf-primary-foreground: #07193D;
+  --wf-muted: #1C2536;
+  --wf-muted-foreground: #B3C0D6;
+  --wf-border: #2F3A4F;
+  --wf-input: #2F3A4F;
+  --wf-ring: #4F84EC;
+}
+
+/* ---------- Base typography ---------- */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  font-family: var(--wf-font-sans);
+  background-color: var(--wf-background);
+  color: var(--wf-foreground);
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--wf-font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--wf-foreground);
+}
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Brand utility classes ---------- */
+.wf-container {
+  width: 100%;
+  max-width: var(--wf-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Bilingual section header: 中文主标题 + EN 小标签 (raise.cn paradigm) */
+.wf-section-eyebrow {
+  font-family: var(--wf-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--wf-primary-500);
+}
+.wf-section-title {
+  font-family: var(--wf-font-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* MORE link / pill button */
+.wf-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wf-primary-600);
+}
+
+/* Card hover overlay (raise.cn case-card pattern) */
+.wf-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(10,27,61,0) 0%, rgba(10,27,61,0.72) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Static surfaces: border-led, no heavy shadow */
+.wf-surface {
+  background-color: var(--wf-card);
+  border: 1px solid var(--wf-border);
+  border-radius: var(--wf-radius-large);
+}
+
+/* ---------- Shared component styles (inlined into every page head) ---------- */
+
+/* Icons */
+.wf-ico-sm { width: 15px; height: 15px; flex-shrink: 0; }
+.wf-ico-md { width: 20px; height: 20px; flex-shrink: 0; }
+.wf-ico-lg { width: 28px; height: 28px; flex-shrink: 0; }
+[data-lucide] { width: 1em; height: 1em; stroke-width: 1.8; }
+
+/* ---------- Header ---------- */
+.wf-site-header { position: sticky; top: 0; z-index: 50; transition: background .3s ease; }
+.wf-topbar { background: transparent; color: rgba(255,255,255,.82); font-size: 13px; }
+.wf-topbar-inner { display: flex; align-items: center; justify-content: space-between; height: 38px; }
+.wf-topbar-welcome { opacity: .85; }
+.wf-topbar-actions { display: flex; align-items: center; gap: 22px; }
+.wf-topbar-link { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,.82); transition: color .2s; }
+.wf-topbar-link:hover { color: #fff; }
+.wf-topbar-cta { display: inline-flex; align-items: center; height: 24px; padding: 0 14px; border: 1px solid rgba(255,255,255,.45); color: #fff; border-radius: var(--wf-radius-full); font-size: 12px; font-weight: 600; transition: background .2s, border-color .2s; }
+.wf-topbar-cta:hover { background: rgba(255,255,255,.16); border-color: #fff; }
+.wf-mainbar { background: transparent; border-bottom: 1px solid transparent; box-shadow: none; }
+.wf-mainbar-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.wf-brand { display: flex; align-items: center; gap: 12px; }
+.wf-brand-mark { display: inline-flex; align-items: center; justify-content: center; width: auto; height: 52px; padding: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; filter: drop-shadow(0 1px 2px rgba(0,0,0,.4)); }
+.wf-brand-mark img { height: 100%; width: auto; display: block; }
+.wf-brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.wf-brand-cn { font-family: var(--wf-font-display); font-size: 20px; font-weight: 800; color: #fff; letter-spacing: .02em; }
+.wf-brand-en { font-size: 10px; font-weight: 600; letter-spacing: .14em; color: rgba(255,255,255,.6); text-transform: uppercase; }
+.wf-nav { display: flex; align-items: center; gap: 4px; }
+.wf-nav-item { position: relative; padding: 8px 16px; font-size: 15px; font-weight: 500; color: rgba(255,255,255,.9); border-radius: var(--wf-radius-medium); transition: color .2s, background .2s; }
+.wf-nav-item:hover { color: #fff; background: rgba(255,255,255,.12); }
+.wf-nav-item[data-active="true"] { color: #fff; }
+.wf-nav-item[data-active="true"]::after { content: ""; position: absolute; left: 16px; right: 16px; bottom: -27px; height: 3px; border-radius: 2px; background: var(--wf-primary-300); }
+.wf-nav-highlight { color: #fff; font-weight: 600; }
+
+/* 滚动后悬浮为深色磨砂，保证白字在浅色区块上可读 */
+.wf-site-header.is-scrolled .wf-topbar { background: rgba(7,25,61,.6); color: rgba(255,255,255,.9); }
+.wf-site-header.is-scrolled .wf-mainbar {
+  background: rgba(7,25,61,.78);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 6px 24px rgba(7,25,61,.2);
+}
+
+/* ---------- Footer ---------- */
+.wf-site-footer { background: var(--wf-ink); color: var(--wf-neutral-300); }
+.wf-footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 48px; padding-top: 64px; padding-bottom: 48px; }
+.wf-footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.wf-footer-brand .wf-brand-mark { height: 42px; padding: 0; }
+.wf-footer-desc { font-size: 13.5px; line-height: 1.85; color: var(--wf-neutral-400); max-width: 360px; }
+.wf-footer-title { color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 18px; }
+.wf-footer-links { display: flex; flex-direction: column; gap: 12px; }
+.wf-footer-links a { font-size: 13.5px; color: var(--wf-neutral-400); transition: color .2s; }
+.wf-footer-links a:hover { color: var(--wf-primary-300); }
+.wf-footer-contact li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--wf-neutral-400); }
+.wf-footer-qr { text-align: center; }
+.wf-qr-box { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 104px; background: #fff; border-radius: var(--wf-radius-medium); color: var(--wf-ink); margin-bottom: 8px; }
+.wf-qr-box [data-lucide] { width: 80px; height: 80px; }
+.wf-qr-label { font-size: 12.5px; color: var(--wf-neutral-400); }
+.wf-footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; }
+.wf-footer-bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.wf-footer-friendly { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.wf-footer-friendly-label { color: var(--wf-neutral-500); }
+.wf-footer-friendly a { color: var(--wf-neutral-400); transition: color .2s; }
+.wf-footer-friendly a:hover { color: var(--wf-primary-300); }
+.wf-footer-copy { font-size: 12.5px; color: var(--wf-neutral-500); }
+
+/* ---------- Section frame ---------- */
+.wf-section { padding: var(--wf-section-pad-y) 0; }
+.wf-section-tight { padding: 56px 0; }
+.wf-section-ink { background: var(--wf-ink); color: var(--wf-neutral-200); }
+.wf-section-muted { background: var(--wf-muted); }
+.wf-section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; }
+.wf-section-head-left { display: flex; flex-direction: column; gap: 10px; }
+.wf-section-ink .wf-section-eyebrow { color: var(--wf-primary-300); }
+.wf-section-ink .wf-section-title { color: #fff; }
+.wf-section-desc { font-size: 15px; color: var(--wf-neutral-500); max-width: 520px; }
+.wf-section-ink .wf-section-desc { color: var(--wf-neutral-400); }
+
+/* ---------- Buttons ---------- */
+.wf-btn { display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 26px; border-radius: var(--wf-radius-medium); font-size: 15px; font-weight: 600; font-family: var(--wf-font-sans); transition: all .2s; cursor: pointer; border: 1px solid transparent; }
+.wf-btn-primary { background: var(--wf-primary-500); color: #fff; }
+.wf-btn-primary:hover { background: var(--wf-primary-600); transform: translateY(-1px); }
+.wf-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.wf-btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+.wf-btn-outline { background: transparent; color: var(--wf-primary-600); border-color: var(--wf-primary-200); }
+.wf-btn-outline:hover { background: var(--wf-primary-50); border-color: var(--wf-primary-400); }
+
+/* ---------- Cards ---------- */
+.wf-card { background: var(--wf-card); border: 1px solid var(--wf-border); border-radius: var(--wf-radius-large); overflow: hidden; transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.wf-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px -16px rgba(10,27,61,.18); border-color: var(--wf-primary-200); }
+.wf-card-media { position: relative; aspect-ratio: 16/10; overflow: hidden; }
+.wf-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.wf-card:hover .wf-card-media img { transform: scale(1.06); }
+.wf-card-body { padding: 20px 22px; }
+.wf-card-tag { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: var(--wf-radius-small); background: var(--wf-primary-50); color: var(--wf-primary-600); font-size: 12px; font-weight: 600; }
+.wf-card-title { font-size: 17px; font-weight: 700; line-height: 1.4; margin-top: 12px; color: var(--wf-foreground); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wf-card:hover .wf-card-title { color: var(--wf-primary-600); }
+.wf-card-meta { display: flex; align-items: center; gap: 14px; margin-top: 14px; font-size: 13px; color: var(--wf-neutral-400); }
+.wf-card-excerpt { font-size: 14px; color: var(--wf-neutral-500); line-height: 1.7; margin-top: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- Grids ---------- */
+.wf-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.wf-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.wf-grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+
+/* ---------- Stats band ---------- */
+.wf-stat { text-align: center; }
+.wf-stat-num { font-family: var(--wf-font-display); font-size: 42px; font-weight: 800; color: #fff; line-height: 1; }
+.wf-stat-num span { font-size: 22px; font-weight: 600; opacity: .8; margin-left: 2px; }
+.wf-stat-label { font-size: 14px; color: var(--wf-neutral-400); margin-top: 10px; }
+
+/* ---------- Responsive (shared) ---------- */
+@media (max-width: 900px) {
+  .wf-topbar-welcome { display: none; }
+  .wf-nav { display: none; }
+  .wf-grid-3, .wf-grid-4, .wf-grid-5 { grid-template-columns: repeat(2, 1fr); }
+  .wf-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .wf-section { padding: 56px 0; }
+  .wf-section-head { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 560px) {
+  .wf-grid-3, .wf-grid-4, .wf-grid-5 { grid-template-columns: 1fr; }
+  .wf-footer-grid { grid-template-columns: 1fr; }
+  .wf-section-title { font-size: 28px; }
+}
+
+/* =================================================================
+   DYNAMIC BACKGROUND SYSTEM (raise.cn 风格沉浸式区块背景)
+   ================================================================= */
+
+/* Keyframes —— 缓慢 Ken Burns 缩放、光斑漂浮、光线流动 */
+@keyframes wf-kenburns {
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(1.08) translate(-1.2%, -1%); }
+  100% { transform: scale(1.12) translate(1%, 1.2%); }
+}
+@keyframes wf-float-orb {
+  0%   { transform: translate(0, 0) scale(1); opacity: .35; }
+  50%  { transform: translate(30px, -20px) scale(1.25); opacity: .55; }
+  100% { transform: translate(0, 0) scale(1); opacity: .35; }
+}
+@keyframes wf-float-orb-2 {
+  0%   { transform: translate(0, 0) scale(1); opacity: .25; }
+  50%  { transform: translate(-40px, 25px) scale(1.3); opacity: .45; }
+  100% { transform: translate(0, 0) scale(1); opacity: .25; }
+}
+@keyframes wf-beam {
+  0%   { transform: translateX(-100%) skewX(-18deg); opacity: 0; }
+  30%  { opacity: .25; }
+  100% { transform: translateX(200%) skewX(-18deg); opacity: 0; }
+}
+@keyframes wf-grid-pulse {
+  0%, 100% { opacity: .06; }
+  50%      { opacity: .14; }
+}
+@keyframes wf-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- 基础背景区块 ---------- */
+.wf-bg-section {
+  position: relative;
+  overflow: hidden;
+}
+.wf-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+/* ============ 视频背景（与 .wf-bg-img 同级定位） ============ */
+.wf-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform;
+  background: var(--ink);
+}
+/* 各 section 沿用 .wf-bg-img 写法的 object-position —— video 版也要 */
+.wf-bg-hero.wf-bg-video, .wf-bg-hero .wf-bg-video { object-position: center 30%; }
+.wf-bg-media .wf-bg-video                      { object-position: center center; }
+.wf-bg-news  .wf-bg-video                      { object-position: center 40%; }
+.wf-bg-member .wf-bg-video                     { object-position: center 30%; }
+.wf-bg-section::after {
+  /* 深色渐变蒙层 */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.wf-bg-section .wf-container { position: relative; z-index: 2; }
+.wf-bg-section .wf-bg-orbs,
+.wf-bg-section .wf-bg-beam { z-index: 1; }
+
+/* 动效开关：加上 .wf-bg-kenburns 即开启缓慢缩放 */
+.wf-bg-kenburns .wf-bg-img {
+  animation: wf-kenburns 28s ease-in-out infinite alternate;
+}
+
+/* ---------- 背景变体（每个区块不同图、不同蒙层色） ---------- */
+
+/* Hero 城市主视觉 */
+.wf-bg-hero .wf-bg-img { object-position: center 30%; }
+
+/* ---------- Hero + 数据带：一整块，共用一个视频背景 ---------- */
+.wf-hero-group {
+  position: relative;
+  overflow: hidden;
+  margin-top: -114px;
+}
+.wf-hero-group > .wf-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--ink);
+}
+/* 整块共用一层蒙层（跨两块连续，无接缝） */
+.wf-hero-group::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.25) 72%, rgba(0,0,0,.55) 100%);
+}
+/* 内部两段只承载内容，不再各自带背景与蒙层 */
+.wf-hero-group > .wf-bg-section {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  background: transparent;
+}
+.wf-hero-group > .wf-bg-hero::after,
+.wf-hero-group > .wf-bg-stats::after { display: none; }
+/* 统一视频背景不需要 hero 的光斑/光束 */
+.wf-hero-group .wf-bg-orbs,
+.wf-hero-group .wf-bg-beam { display: none; }
+
+/* 潍广通预览 —— 科技媒体抽象背景（深色蒙层） */
+.wf-bg-media .wf-bg-img { object-position: center center; }
+.wf-bg-media::after {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.5) 100%);
+}
+.wf-bg-media { color: #fff; }
+.wf-bg-media .wf-section-title { color: #fff; }
+.wf-bg-media .wf-section-desc { color: var(--wf-neutral-300); }
+.wf-bg-media .wf-section-eyebrow { color: var(--wf-primary-300); }
+.wf-bg-media .wf-more { color: var(--wf-primary-300); }
+
+/* 协会要闻 —— 新闻发布会动态背景（深色蒙层） */
+.wf-bg-news .wf-bg-img { object-position: center 40%; }
+.wf-bg-news::after {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.5) 100%);
+}
+.wf-bg-news { color: #fff; }
+.wf-bg-news .wf-section-title { color: #fff; }
+.wf-bg-news .wf-section-desc { color: var(--wf-neutral-300); }
+.wf-bg-news .wf-section-eyebrow { color: var(--wf-primary-300); }
+.wf-bg-news .wf-more { color: var(--wf-primary-300); }
+
+/* 会员风采 —— 商务合作剪影 */
+.wf-bg-member .wf-bg-img { object-position: center 30%; }
+.wf-bg-member::after {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.5) 100%);
+}
+.wf-bg-member { color: #fff; }
+.wf-bg-member .wf-section-title { color: #fff; }
+.wf-bg-member .wf-section-desc { color: var(--wf-neutral-300); }
+.wf-bg-member .wf-section-eyebrow { color: var(--wf-primary-300); }
+
+/* CTA 入会带 —— 视频背景 */
+.wf-bg-cta .wf-bg-img { object-position: center 60%; }
+.wf-bg-cta .wf-bg-video { object-position: center 60%; }
+.wf-bg-cta::after {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.4) 100%);
+}
+
+/* 新闻页 Banner */
+.wf-bg-banner-news .wf-bg-img { object-position: center 40%; }
+.wf-bg-banner-news::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.88) 0%, rgba(10,27,61,.72) 50%, rgba(10,27,61,.55) 100%);
+}
+
+/* 潍广通页 Banner */
+.wf-bg-banner-media .wf-bg-img { object-position: center 45%; }
+.wf-bg-banner-media::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.92) 0%, rgba(10,27,61,.78) 50%, rgba(22,89,214,.5) 100%);
+}
+
+/* 潍广通发布/寻找 CTA */
+.wf-bg-cta-publish .wf-bg-img { object-position: center 40%; }
+.wf-bg-cta-publish::after {
+  background:
+    linear-gradient(90deg, rgba(7,25,61,.9) 0%, rgba(10,27,61,.6) 50%, rgba(7,25,61,.9) 100%);
+}
+
+/* ---------- 装饰光斑（漂浮在背景之上） ---------- */
+/* 带视频背景的 section 隐藏光斑/光束，让视频画面纯净展示 */
+.wf-bg-section:has(.wf-bg-video) .wf-bg-orbs,
+.wf-bg-section:has(.wf-bg-video) .wf-bg-beam { display: none; }
+
+.wf-bg-orbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  opacity: .35;
+}
+.wf-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  background: radial-gradient(circle, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 70%);
+}
+.wf-bg-orb.o1 { width: 380px; height: 380px; top: -80px; left: -60px; animation: wf-float-orb 14s ease-in-out infinite; }
+.wf-bg-orb.o2 { width: 280px; height: 280px; bottom: -60px; right: 10%; background: radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%); animation: wf-float-orb-2 18s ease-in-out infinite; }
+.wf-bg-orb.o3 { width: 200px; height: 200px; top: 30%; right: -40px; background: radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%); animation: wf-float-orb 22s ease-in-out infinite; }
+
+/* 光束扫过 */
+.wf-bg-beam {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 35%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.05) 50%, transparent 100%);
+  animation: wf-beam 12s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------- 入场动效（滚动触发需 JS，此处提供 CSS 类） ---------- */
+.wf-reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+.wf-reveal.in-view { opacity: 1; transform: translateY(0); }
+.wf-reveal-delay-1 { transition-delay: .1s; }
+.wf-reveal-delay-2 { transition-delay: .2s; }
+.wf-reveal-delay-3 { transition-delay: .3s; }
+.wf-reveal-delay-4 { transition-delay: .4s; }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--wf-background);
+    --color-foreground: var(--wf-foreground);
+    --color-card: var(--wf-card);
+    --color-card-foreground: var(--wf-card-foreground);
+    --color-popover: var(--wf-popover);
+    --color-popover-foreground: var(--wf-popover-foreground);
+    --color-primary: var(--wf-primary);
+    --color-primary-foreground: var(--wf-primary-foreground);
+    --color-muted: var(--wf-muted);
+    --color-muted-foreground: var(--wf-muted-foreground);
+    --color-border: var(--wf-border);
+    --color-input: var(--wf-input);
+    --color-ring: var(--wf-ring);
+    --radius-sm: var(--wf-radius-small);
+    --radius-md: var(--wf-radius-medium);
+    --radius-lg: var(--wf-radius-large);
+  }
+  @layer base {
+    body { background: var(--wf-background); color: var(--wf-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--wf-background); }
+      .text-background { color: var(--wf-background); }
+      .border-background { border-color: var(--wf-background); }
+      .ring-background { --tw-ring-color: var(--wf-background); }
+      .bg-foreground { background-color: var(--wf-foreground); }
+      .text-foreground { color: var(--wf-foreground); }
+      .border-foreground { border-color: var(--wf-foreground); }
+      .ring-foreground { --tw-ring-color: var(--wf-foreground); }
+      .bg-card { background-color: var(--wf-card); }
+      .text-card { color: var(--wf-card); }
+      .border-card { border-color: var(--wf-card); }
+      .ring-card { --tw-ring-color: var(--wf-card); }
+      .bg-card-foreground { background-color: var(--wf-card-foreground); }
+      .text-card-foreground { color: var(--wf-card-foreground); }
+      .border-card-foreground { border-color: var(--wf-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--wf-card-foreground); }
+      .bg-popover { background-color: var(--wf-popover); }
+      .text-popover { color: var(--wf-popover); }
+      .border-popover { border-color: var(--wf-popover); }
+      .ring-popover { --tw-ring-color: var(--wf-popover); }
+      .bg-popover-foreground { background-color: var(--wf-popover-foreground); }
+      .text-popover-foreground { color: var(--wf-popover-foreground); }
+      .border-popover-foreground { border-color: var(--wf-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--wf-popover-foreground); }
+      .bg-primary { background-color: var(--wf-primary); }
+      .text-primary { color: var(--wf-primary); }
+      .border-primary { border-color: var(--wf-primary); }
+      .ring-primary { --tw-ring-color: var(--wf-primary); }
+      .bg-primary-foreground { background-color: var(--wf-primary-foreground); }
+      .text-primary-foreground { color: var(--wf-primary-foreground); }
+      .border-primary-foreground { border-color: var(--wf-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--wf-primary-foreground); }
+      .bg-muted { background-color: var(--wf-muted); }
+      .text-muted { color: var(--wf-muted); }
+      .border-muted { border-color: var(--wf-muted); }
+      .ring-muted { --tw-ring-color: var(--wf-muted); }
+      .bg-muted-foreground { background-color: var(--wf-muted-foreground); }
+      .text-muted-foreground { color: var(--wf-muted-foreground); }
+      .border-muted-foreground { border-color: var(--wf-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--wf-muted-foreground); }
+      .bg-border { background-color: var(--wf-border); }
+      .text-border { color: var(--wf-border); }
+      .border-border { border-color: var(--wf-border); }
+      .ring-border { --tw-ring-color: var(--wf-border); }
+      .bg-input { background-color: var(--wf-input); }
+      .text-input { color: var(--wf-input); }
+      .border-input { border-color: var(--wf-input); }
+      .ring-input { --tw-ring-color: var(--wf-input); }
+      .bg-ring { background-color: var(--wf-ring); }
+      .text-ring { color: var(--wf-ring); }
+      .border-ring { border-color: var(--wf-ring); }
+      .ring-ring { --tw-ring-color: var(--wf-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+<style>
+/* ===== index.html — page-specific critical layout（简约高级版） ===== */
+
+/* ---- 区段头：细线点缀 + 宽裕留白 ---- */
+.wf-section-head { margin-bottom: 72px; }
+.wf-section-head-left { gap: 16px; }
+.wf-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+.wf-section-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: .5;
+}
+.wf-section-title {
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.wf-more {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  transition: opacity .2s;
+}
+.wf-more:hover { opacity: .65; }
+.wf-more i { transition: transform .2s; }
+.wf-more:hover i { transform: translateX(3px); }
+
+/* ---- 按钮：更克制优雅 ---- */
+.wf-btn {
+  height: 44px;
+  padding: 0 28px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+}
+.wf-btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px -8px rgba(22,89,214,.5); }
+
+/* ---- Hero ---- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  margin-top: -114px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+  width: 100%;
+  height: 480px;
+}
+
+/* 磨砂玻璃蒙版：左右顶到视口两端，上下限定在 hero-inner 高度内 */
+.hero-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--wf-font-display);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--wf-primary-300);
+  margin-bottom: 28px;
+}
+.hero-eyebrow::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+  opacity: .5;
+}
+.hero-title {
+  font-family: var(--wf-font-display);
+  font-size: clamp(44px, 5vw, 60px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--wf-primary-foreground);
+  text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+.hero-subtitle {
+  margin-top: 28px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--wf-neutral-200);
+  max-width: 520px;
+}
+.hero-actions {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-arrow {
+  transition: transform .2s ease;
+}
+.wf-btn:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+/* ---- Stats band：大数字 + 优雅分隔 ---- */
+.stats-section {
+  padding: 0;
+  min-height: 24vh;
+  display: flex;
+  align-items: center;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.stats-grid .wf-stat {
+  position: relative;
+  padding: 4px 28px;
+}
+/* 分隔线移除，纯留白分隔 */
+.stats-grid .wf-stat + .wf-stat::before {
+  display: none;
+}
+
+/* ---- 卡片：无边框无底色，纯内容浮于背景 ---- */
+.wf-card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+.wf-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.wf-card-body { padding: 24px 0 0; }
+.wf-card-tag {
+  height: 20px;
+  padding: 0 9px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+}
+.wf-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  margin-top: 10px;
+}
+.wf-card-excerpt {
+  font-size: 13.5px;
+  color: var(--wf-neutral-500);
+  line-height: 1.75;
+  margin-top: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wf-card-meta { gap: 16px; margin-top: 0; font-size: 12.5px; }
+
+/* ---- 协会要闻：编辑式列表，日期 | 标题+摘要 ---- */
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+.news-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 40px;
+  align-items: baseline;
+  padding: 32px 0;
+}
+.news-row:first-child { padding-top: 0; }
+.news-row:last-child { padding-bottom: 0; }
+.news-date {
+  font-family: var(--wf-font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--wf-primary-400);
+  white-space: nowrap;
+}
+.news-content { min-width: 0; }
+.news-content .wf-card-title {
+  margin-top: 0;
+  font-size: 19px;
+}
+.news-content .wf-card-excerpt {
+  margin-top: 10px;
+}
+
+/* ---- 潍广通：清爽横排列表，图标 | 标题+点位 | 描述 ---- */
+.media-list {
+  display: flex;
+  flex-direction: column;
+}
+.media-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 28px 0;
+}
+.media-row:first-child { padding-top: 0; }
+.media-row:last-child { padding-bottom: 0; }
+.media-row-ico {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--wf-primary-400);
+}
+.media-row-ico .mci { width: 36px; height: 36px; stroke-width: 1.3; }
+.media-row-head { min-width: 0; }
+.media-row-head .media-row-title {
+  font-family: var(--wf-font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+}
+.media-row-head .media-points {
+  margin-top: 6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--wf-primary-600);
+}
+.media-row-desc {
+  font-size: 13.5px;
+  color: var(--wf-neutral-500);
+  line-height: 1.7;
+}
+
+/* ---- Member showcase：宽裕间距 + 精炼图标 ---- */
+.member-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 720px;
+}
+.member-media {
+  border-radius: 0;
+  overflow: visible;
+  aspect-ratio: auto;
+}
+.member-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.member-list {
+  display: flex;
+  flex-direction: column;
+}
+/* ---- member-item clickable ---- */
+.member-item { cursor: pointer; transition: transform .25s ease, opacity .25s ease; }
+.member-item:hover { transform: translateX(6px); opacity: .92; }
+.member-item:focus-visible { outline: 2px solid var(--wf-primary-300); outline-offset: 2px; border-radius: 4px; }
+.member-cta-arrow { transition: transform .2s ease; }
+.wf-more:hover .member-cta-arrow { transform: translateX(4px); }
+
+.member-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: 28px 0;
+  border-bottom: none;
+}
+.member-item:first-child { padding-top: 0; }
+.member-item:last-child { padding-bottom: 0; }
+.member-ico {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  background: transparent;
+  color: var(--wf-primary-600);
+}
+.member-ico [data-lucide] { width: 22px; height: 22px; stroke-width: 1.4; }
+.member-name {
+  font-family: var(--wf-font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wf-foreground);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+.member-desc {
+  margin-top: 5px;
+  font-size: 13.5px;
+  color: var(--wf-neutral-500);
+  line-height: 1.65;
+}
+
+/* ---- CTA band：极简居中 ---- */
+.cta-section {
+  padding: 0;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta-title {
+  font-family: var(--wf-font-display);
+  font-size: clamp(30px, 3.2vw, 42px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--wf-primary-foreground);
+  text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+.cta-sub {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--wf-neutral-300);
+}
+.cta-actions {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ---- Section title wrapping safety ---- */
+.wf-section-title {
+  text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* ---- 桌面端模块宽幅加高（每块上下撑满视口，字体保持不变） ---- */
+@media (min-width: 901px) {
+  .hero { min-height: 100vh; margin-top: -114px; }
+
+  /* 通用内容区块：整块 min-height 近一屏，flex 垂直居中 */
+  .wf-section {
+    padding: 0;
+    min-height: 96vh;
+    display: flex;
+    align-items: center;
+  }
+  .wf-section > .wf-container {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    width: 100%;
+  }
+
+  .stats-section {
+    min-height: 26vh;
+    padding: 0;
+  }
+
+  .cta-section {
+    min-height: 96vh;
+    padding: 0;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .member-layout { max-width: 100%; }
+  .media-row { grid-template-columns: 160px 1fr; gap: 24px; }
+}
+@media (max-width: 900px) {
+  .hero { min-height: 460px; margin-top: -114px; }
+  .hero-inner { padding: 0 28px; width: 100%; height: auto; display: flex; flex-direction: column; justify-content: center; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 0; }
+  .stats-grid .wf-stat + .wf-stat::before { display: none; }
+  .news-row { grid-template-columns: 1fr; gap: 8px; }
+  .media-row { grid-template-columns: 1fr; gap: 10px; }
+  .media-row-desc { grid-column: auto; padding-left: 0; }
+}
+@media (max-width: 560px) {
+  .stats-grid { grid-template-columns: 1fr; gap: 28px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .wf-btn { justify-content: center; }
+  .media-row-desc { padding-left: 0; }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ---- 深色背景区块（协会要闻 / 潍广通预览）：列表式简约排版 ---- */
+.wf-bg-news .news-list,
+.wf-bg-media .media-list { max-width: 880px; }
+.wf-bg-news .news-date { color: var(--wf-primary-300); }
+.wf-bg-news .news-content .wf-card-title { color: #fff; }
+.wf-bg-news .news-content .wf-card-excerpt { color: rgba(255,255,255,.68); }
+.wf-bg-news .news-row + .news-row { border-top: 1px solid rgba(255,255,255,.08); }
+.wf-bg-media .media-row-ico { color: var(--wf-primary-300); }
+.wf-bg-media .media-row-title { color: #fff; }
+.wf-bg-media .media-row-head .media-points { color: var(--wf-primary-300); }
+.wf-bg-media .media-row-desc { color: rgba(255,255,255,.68); }
+.wf-bg-media .media-row + .media-row { border-top: 1px solid rgba(255,255,255,.08); }
+
+/* ---- wf-bg-member dark overrides ---- */
+.wf-bg-member .member-name { color: #fff; }
+.wf-bg-member .member-desc { color: var(--wf-neutral-300); }
+.wf-bg-member .member-ico { background: transparent; color: var(--wf-primary-300); }
+.wf-bg-member .member-item { border-bottom-color: rgba(255,255,255,.1); }
+.wf-bg-member .member-media { box-shadow: none; }
+</style>
+
+<!-- ============ SITE HEADER ============ -->
+<header class="wf-site-header">
+  <!-- Utility top bar -->
+  <div class="wf-topbar">
+    <div class="wf-container wf-topbar-inner">
+      <span class="wf-topbar-welcome">欢迎来到潍坊市广告协会官方网站</span>
+      <div class="wf-topbar-actions">
+        <a href="./contact.html" class="wf-topbar-link">0536-8888XXX</a>
+        <a href="./contact.html" class="wf-topbar-link">wfsggxh2026@163.com</a>
+        <a href="./service.html" class="wf-topbar-cta">入会申请</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <div class="wf-mainbar">
+    <div class="wf-container wf-mainbar-inner">
+            <a href="./index.html" class="wf-brand">
+        <span class="wf-brand-mark"><img src="../assets/logo-white.png" alt="潍坊市广告协会"></span>
+      </a>
+      <nav class="wf-nav" aria-label="主导航">
+        <a href="./index.html" class="wf-nav-item" data-nav-key="home" data-dom-id="nav-home" data-active="true">首页</a>
+        <a href="./about-new.html" class="wf-nav-item" data-nav-key="about" data-dom-id="nav-about">关于协会</a>
+        <a href="./news.html" class="wf-nav-item" data-nav-key="news" data-dom-id="nav-news">协会动态</a>
+        <a href="./policy.html" class="wf-nav-item" data-nav-key="policy" data-dom-id="nav-policy">政策法规</a>
+        <a href="./service.html" class="wf-nav-item" data-nav-key="service" data-dom-id="nav-service">会员服务</a>
+        <a href="./members.html" class="wf-nav-item" data-nav-key="member" data-dom-id="nav-member">会员风采</a>
+        <a href="./media.html" class="wf-nav-item wf-nav-highlight" data-nav-key="media" data-dom-id="nav-media">潍广通</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Hero 首屏 + 2. 数据带：共用同一视频背景，连成一整块 -->
+  <div class="wf-hero-group" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px inset;">
+    <video class="wf-bg-video" src="../assets/bg-hero.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+
+    <!-- 1. Hero -->
+    <section class="wf-bg-section wf-bg-hero hero">
+      <div class="wf-bg-orbs"><span class="wf-bg-orb o1"></span><span class="wf-bg-orb o2"></span><span class="wf-bg-orb o3"></span></div>
+      <div class="wf-bg-beam"></div>
+      <div class="wf-container">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">WEIFANG ADVERTISING ASSOCIATION</p>
+          <h1 class="hero-title">潍坊市广告协会</h1>
+          <p class="hero-subtitle">服务广告行业 · 规范行业自律 · 搭建政企桥梁，推动潍坊广告产业高质量发展</p>
+          <div class="hero-actions">
+            <a href="./media.html" class="wf-btn wf-btn-primary" data-dom-id="cta-media">了解潍广通</a>
+            <a href="./service.html" class="wf-btn wf-btn-ghost">入会申请</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Stats band -->
+    <section class="wf-bg-section wf-bg-stats stats-section">
+      <div class="wf-container" style="width: 1170px; height: 93.7969px; justify-content: normal; display: block; align-items: normal;">
+        <div class="stats-grid" id="dynamic-stats">
+          <div class="wf-stat">
+            <div class="wf-stat-num">200<span>+</span></div>
+            <div class="wf-stat-label">会员单位</div>
+          </div>
+          <div class="wf-stat">
+            <div class="wf-stat-num">5000<span>+</span></div>
+            <div class="wf-stat-label">媒体资源</div>
+          </div>
+          <div class="wf-stat">
+            <div class="wf-stat-num">15<span>+</span></div>
+            <div class="wf-stat-label">服务年限</div>
+          </div>
+          <div class="wf-stat">
+            <div class="wf-stat-num">100<span>+</span></div>
+            <div class="wf-stat-label">行业活动</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 3. 协会要闻 -->
+  <section class="wf-bg-section wf-bg-news wf-section wf-reveal">
+    <video class="wf-bg-video" src="../assets/bg-news.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="wf-container">
+      <div class="wf-section-head">
+        <div class="wf-section-head-left">
+          <span class="wf-section-eyebrow">ASSOCIATION NEWS</span>
+          <h2 class="wf-section-title">协会要闻</h2>
+        </div>
+        <a href="./news.html" class="wf-more" data-dom-id="more-news" data-hide-edge="true">查看更多</a>
+      </div>
+      <div class="news-list" id="dynamic-news">
+        <article class="news-row wf-reveal wf-reveal-delay-1">
+          <div class="news-date">2026.07.15</div>
+          <div class="news-content">
+            <h3 class="wf-card-title">协会召开2026年第一次理事会会议</h3>
+            <p class="wf-card-excerpt">7月15日，协会在秘书处会议室召开2026年第一次理事会，总结上半年工作并部署下半年重点任务。</p>
+          </div>
+        </article>
+        <article class="news-row wf-reveal wf-reveal-delay-2">
+          <div class="news-date">2026.07.08</div>
+          <div class="news-content">
+            <h3 class="wf-card-title">关于举办第六届广告创意大赛的通知</h3>
+            <p class="wf-card-excerpt">为激发广告创意活力，协会启动第六届广告创意大赛报名，面向全市广告企业及创作者征集优秀作品。</p>
+          </div>
+        </article>
+        <article class="news-row wf-reveal wf-reveal-delay-3">
+          <div class="news-date">2026.07.02</div>
+          <div class="news-content">
+            <h3 class="wf-card-title">数字化转型重塑广告产业格局</h3>
+            <p class="wf-card-excerpt">数字技术加速渗透广告产业链，程序化投放与内容营销深度融合，推动行业迈向智能化新阶段。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 潍广通媒体资源预览 -->
+  <section class="wf-bg-section wf-bg-media wf-section">
+    <video class="wf-bg-video" src="../assets/bg-media.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="wf-bg-orbs"><span class="wf-bg-orb o1" style="top:20%;left:60%"></span><span class="wf-bg-orb o2" style="bottom:10%;right:5%"></span></div>
+    <div class="wf-container">
+      <div class="wf-section-head">
+        <div class="wf-section-head-left">
+          <span class="wf-section-eyebrow">MEDIA PLATFORM</span>
+          <h2 class="wf-section-title">潍广通 · 一站式媒体资源平台</h2>
+        </div>
+        <a href="./media.html" class="wf-more" data-dom-id="more-media" data-hide-edge="true">查看更多</a>
+      </div>
+      <div class="media-list" id="dynamic-media-preview">
+        <article class="media-row">
+          <div class="media-row-head">
+            <div class="media-row-title">户外大牌</div>
+            <div class="media-points">12 个点位</div>
+          </div>
+          <p class="media-row-desc">城市主干道与商圈核心位置高触及率广告位</p>
+        </article>
+        <article class="media-row">
+          <div class="media-row-head">
+            <div class="media-row-title">电梯媒体</div>
+            <div class="media-points">28 个点位</div>
+          </div>
+          <p class="media-row-desc">覆盖住宅与商务楼宇的封闭场景广告</p>
+        </article>
+        <article class="media-row">
+          <div class="media-row-head">
+            <div class="media-row-title">交通媒体</div>
+            <div class="media-points">16 个点位</div>
+          </div>
+          <p class="media-row-desc">公交车身与站台触达城市出行人群</p>
+        </article>
+        <article class="media-row">
+          <div class="media-row-head">
+            <div class="media-row-title">社区媒体</div>
+            <div class="media-points">35 个点位</div>
+          </div>
+          <p class="media-row-desc">深入社区门禁与道闸的精准触达</p>
+        </article>
+        <article class="media-row">
+          <div class="media-row-head">
+            <div class="media-row-title">场景媒体</div>
+            <div class="media-points">9 个点位</div>
+          </div>
+          <p class="media-row-desc">商超与展馆场景化沉浸式投放</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 会员风采 -->
+  <section class="wf-bg-section wf-bg-member wf-section">
+    <video class="wf-bg-video" src="../assets/bg-member.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="wf-bg-orbs"><span class="wf-bg-orb o1" style="background:radial-gradient(circle,rgba(255,255,255,.2) 0%,transparent 70%)"></span><span class="wf-bg-orb o2"></span></div>
+    <div class="wf-container">
+      <div class="wf-section-head">
+        <div class="wf-section-head-left">
+          <span class="wf-section-eyebrow">MEMBERS</span>
+          <h2 class="wf-section-title">会员风采</h2>
+        </div>
+        <a href="./members.html" class="wf-more">
+          查看全部会员
+          <i data-lucide="arrow-right" class="member-cta-arrow"></i>
+        </a>
+      </div>
+      <div class="member-layout">
+        <div class="member-list" id="dynamic-members">
+          <div class="member-item wf-reveal wf-reveal-delay-1">
+            <div>
+              <div class="member-name">潍坊传媒集团有限公司</div>
+              <p class="member-desc">综合性广告运营，覆盖报业与新媒体全媒体矩阵</p>
+            </div>
+          </div>
+          <div class="member-item wf-reveal wf-reveal-delay-2">
+            <div>
+              <div class="member-name">鲁风文化传播股份</div>
+              <p class="member-desc">品牌策划与整合营销传播服务提供商</p>
+            </div>
+          </div>
+          <div class="member-item wf-reveal wf-reveal-delay-3">
+            <div>
+              <div class="member-name">潍坊公交广告公司</div>
+              <p class="member-desc">户外交通媒体运营，覆盖城市公交网络</p>
+            </div>
+          </div>
+          <div class="member-item wf-reveal wf-reveal-delay-4">
+            <div>
+              <div class="member-name">齐鲁创意设计工作室</div>
+              <p class="member-desc">品牌视觉与创意设计服务商</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 入会 CTA -->
+  <section class="wf-bg-section wf-bg-cta wf-section cta-section">
+    <video class="wf-bg-video" src="../assets/bg-cta-city.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="wf-bg-orbs"><span class="wf-bg-orb o1"></span><span class="wf-bg-orb o2"></span><span class="wf-bg-orb o3"></span></div>
+    <div class="wf-bg-beam" style="animation-delay:3s"></div>
+    <div class="wf-container">
+      <div class="cta-inner">
+        <h2 class="cta-title">加入潍坊市广告协会</h2>
+        <p class="cta-sub">携手共进，赋能广告产业高质量发展</p>
+        <div class="cta-actions">
+          <a href="./service.html" class="wf-btn wf-btn-primary">入会申请</a>
+          <a href="./contact.html" class="wf-btn wf-btn-ghost">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ SITE FOOTER ============ -->
+<footer class="wf-site-footer">
+  <div class="wf-container wf-footer-grid">
+    <div class="wf-footer-col wf-footer-about">
+            <div class="wf-footer-brand">
+        <span class="wf-brand-mark"><img src="../assets/logo-white.png" alt="潍坊市广告协会"></span>
+      </div>
+      <p class="wf-footer-desc">潍坊市广告协会是经潍坊市行政审批服务局批准、潍坊市民政局登记注册，由潍坊市市场监督管理局作为业务主管单位的全市性、行业性、非营利性社会组织。</p>
+    </div>
+    <div class="wf-footer-col">
+      <h4 class="wf-footer-title">快速导航</h4>
+      <ul class="wf-footer-links">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./about-new.html">关于协会</a></li>
+        <li><a href="./news.html">协会动态</a></li>
+        <li><a href="./policy.html">政策法规</a></li>
+        <li><a href="./service.html">会员服务</a></li>
+        <li><a href="./members.html">会员风采</a></li>
+        <li><a href="./media.html">潍广通</a></li>
+        <li><a href="./contact.html" data-dom-id="footer-contact">联系我们</a></li>
+      </ul>
+    </div>
+    <div class="wf-footer-col">
+      <h4 class="wf-footer-title">联系我们</h4>
+      <ul class="wf-footer-links wf-footer-contact">
+        <li>潍坊市潍城区怡园路1666号401</li>
+        <li>0536-8888XXX</li>
+        <li>wfsggxh2026@163.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wf-footer-bottom">
+    <div class="wf-container wf-footer-bottom-inner">
+      <div class="wf-footer-friendly">
+        <span class="wf-footer-friendly-label">友情链接：</span>
+        <a href="#">中国广告协会</a>
+        <a href="#">山东省广告协会</a>
+        <a href="#">潍坊市市场监督管理局</a>
+        <a href="#">潍坊市广告产业园</a>
+      </div>
+      <p class="wf-footer-copy">© 2026 潍坊市广告协会 版权所有　鲁ICP备XXXXXXXX号</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal —— 给带 .wf-reveal 的元素进入视口时加 .in-view
+(function(){
+  var els = document.querySelectorAll('.wf-reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.01, rootMargin: '0px' });
+  els.forEach(function(el){ io.observe(el); });
+  // Fallback: 1.5s 后强制全部显示，防止 iframe/预览环境不触发
+  setTimeout(function(){ els.forEach(function(el){ el.classList.add('in-view'); }); }, 1500);
+})();
+</script>
+<script>
+// 顶部导航滚动态：离开首屏后切换为深色磨砂悬浮
+(function(){
+  var h = document.querySelector('.wf-site-header');
+  if (!h) return;
+  var upd = function(){ h.classList.toggle('is-scrolled', window.scrollY > 40); };
+  upd();
+  window.addEventListener('scroll', upd, { passive: true });
+  window.addEventListener('resize', upd);
+})();
+</script>
+<script>
+// 静态内嵌首页内容（无需后端服务）
+(function(){
+  function esc(str) {
+    return String(str || '').replace(/[&<>"']/g, function(m) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
+    });
+  }
+
+  function fmtDate(dateStr) {
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return dateStr;
+    return d.getFullYear() + '.' + String(d.getMonth()+1).padStart(2,'0') + '.' + String(d.getDate()).padStart(2,'0');
+  }
+
+  var stats = [{"id":1,"key":"members","label":"会员单位","value":"128","suffix":"+","sort_order":0,"updated_at":"2026-08-04 05:53:55"},{"id":2,"key":"cases","label":"服务案例","value":"3600","suffix":"+","sort_order":1,"updated_at":"2026-08-01 08:42:26"},{"id":3,"key":"points","label":"覆盖点位","value":"50000","suffix":"+","sort_order":2,"updated_at":"2026-08-01 08:42:26"},{"id":4,"key":"years","label":"行业经验","value":"15","suffix":"年","sort_order":3,"updated_at":"2026-08-01 08:42:26"}];
+  var news = [{"id":1,"title":"协会召开2026年第一次理事会会议","summary":"总结上半年工作，部署下半年重点任务，围绕会员服务、行业自律、政企桥梁等核心职能明确推进路径","content":null,"cover_image":null,"category":"协会要闻","is_published":1,"sort_order":0,"created_at":"2026-07-15 10:00:00","updated_at":"2026-08-01 08:42:26"},{"id":2,"title":"关于缴纳2026年度会费的通知","summary":"请各会员单位于8月31日前完成会费缴纳，逾期未缴将影响年度会员权益享受与评优资格","content":null,"cover_image":null,"category":"通知公告","is_published":1,"sort_order":1,"created_at":"2026-07-10 10:00:00","updated_at":"2026-08-01 08:42:26"},{"id":3,"title":"关于举办第六届广告创意大赛的通知","summary":"面向全市广告企业征集优秀创意作品，设平面、视频、互动三大参赛类别，欢迎踊跃报名","content":null,"cover_image":null,"category":"通知公告","is_published":1,"sort_order":2,"created_at":"2026-07-08 10:00:00","updated_at":"2026-08-01 08:42:26"}];
+  var categories = [{"id":1,"slug":"outdoor","name":"户外大牌","description":"城市主干道与商圈核心位置高触及率广告位","cover_image":"../assets/media-outdoor.jpg","sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-04 05:53:57","points":[{"id":1,"category_slug":"outdoor","title":"LED大屏","description":"高人流商圈LED巨幕，全天候曝光","image":null,"sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":2,"category_slug":"outdoor","title":"高速单立柱","description":"高速公路出入口，远距离视觉冲击","image":null,"sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":3,"category_slug":"outdoor","title":"楼顶大牌","description":"城区主干道楼宇顶部，品牌地标","image":null,"sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":4,"category_slug":"outdoor","title":"跨线桥广告","description":"城市高架跨线桥，车流必经","image":null,"sort_order":3,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}]},{"id":2,"slug":"elevator","name":"电梯媒体","description":"覆盖住宅与商务楼宇的封闭场景广告","cover_image":"../assets/media-elevator.jpg","sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26","points":[{"id":5,"category_slug":"elevator","title":"电梯海报","description":"住宅/写字楼电梯框架，精准触达","image":null,"sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":6,"category_slug":"elevator","title":"电梯电视","description":"电梯内视频广告，动态展示","image":null,"sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":7,"category_slug":"elevator","title":"智能屏","description":"AI智能投放，程序化购买","image":null,"sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}]},{"id":3,"slug":"transit","name":"交通媒体","description":"公交车身与站台触达城市出行人群","cover_image":"../assets/media-transit.jpg","sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26","points":[{"id":8,"category_slug":"transit","title":"公交车身","description":"全车身覆膜广告，移动曝光","image":null,"sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":9,"category_slug":"transit","title":"公交候车亭","description":"站台灯箱，候车黄金视线","image":null,"sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":10,"category_slug":"transit","title":"出租车顶灯屏","description":"车载LED屏，城市穿梭","image":null,"sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":11,"category_slug":"transit","title":"高铁站灯箱","description":"高铁站候车大厅，高端客流","image":null,"sort_order":3,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}]},{"id":4,"slug":"community","name":"社区媒体","description":"深入社区门禁与道闸的精准触达","cover_image":"../assets/media-community.jpg","sort_order":3,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26","points":[{"id":12,"category_slug":"community","title":"小区道闸","description":"出入口道闸广告，必经通道","image":null,"sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":13,"category_slug":"community","title":"门禁广告","description":"单元门禁屏，最后十米","image":null,"sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":14,"category_slug":"community","title":"快递柜屏","description":"智能快递柜屏幕，高频触达","image":null,"sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}]},{"id":5,"slug":"scene","name":"场景媒体","description":"商超与展馆场景化沉浸式投放","cover_image":"../assets/media-scene.jpg","sort_order":4,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26","points":[{"id":15,"category_slug":"scene","title":"影院映前","description":"电影映前广告，沉浸式体验","image":null,"sort_order":0,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":16,"category_slug":"scene","title":"健身房","description":"运动场景屏，健康人群","image":null,"sort_order":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":17,"category_slug":"scene","title":"餐饮桌贴","description":"餐桌桌面广告，用餐时长","image":null,"sort_order":2,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":18,"category_slug":"scene","title":"药店医院灯箱","description":"健康场景灯箱，精准人群","image":null,"sort_order":3,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}]}];
+  var members = [{"id":33,"name":"潍坊传媒集团有限公司","logo":"","industry":"综合传媒","description":"综合性广告运营，覆盖报业与新媒体全媒体矩阵","website":"","is_featured":1,"sort_order":0,"is_published":1,"created_at":"2026-08-04 05:54:28","updated_at":"2026-08-04 05:54:28"},{"id":2,"name":"鲁风文化传播股份","logo":null,"industry":"品牌策划","description":"品牌策划与整合营销传播服务提供商","website":null,"is_featured":1,"sort_order":1,"is_published":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":3,"name":"潍坊公交广告公司","logo":null,"industry":"交通媒体","description":"户外交通媒体运营，覆盖城市公交网络","website":null,"is_featured":1,"sort_order":2,"is_published":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"},{"id":4,"name":"齐鲁创意设计工作室","logo":null,"industry":"创意设计","description":"品牌视觉与创意设计服务商","website":null,"is_featured":1,"sort_order":3,"is_published":1,"created_at":"2026-08-01 08:42:26","updated_at":"2026-08-01 08:42:26"}];
+
+  function renderStats() {
+    var container = document.getElementById('dynamic-stats');
+    if (!container || !stats.length) return;
+    container.innerHTML = stats.map(function(s) {
+      return '<div class="wf-stat">' +
+        '<div class="wf-stat-num">' + esc(s.value) + '<span>' + esc(s.suffix || '') + '</span></div>' +
+        '<div class="wf-stat-label">' + esc(s.label) + '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function renderNews() {
+    var container = document.getElementById('dynamic-news');
+    if (!container || !news.length) return;
+    container.innerHTML = news.map(function(n, i) {
+      return '<article class="news-row wf-reveal wf-reveal-delay-' + (i+1) + '">' +
+        '<div class="news-date">' + fmtDate(n.created_at) + '</div>' +
+        '<div class="news-content">' +
+          '<h3 class="wf-card-title">' + esc(n.title) + '</h3>' +
+          '<p class="wf-card-excerpt">' + esc(n.summary || n.content || '') + '</p>' +
+        '</div>' +
+      '</article>';
+    }).join('');
+  }
+
+  function renderMediaPreview() {
+    var container = document.getElementById('dynamic-media-preview');
+    if (!container || !categories.length) return;
+    container.innerHTML = categories.map(function(c) {
+      return '<article class="media-row">' +
+        '<div class="media-row-head">' +
+          '<div class="media-row-title">' + esc(c.name) + '</div>' +
+          '<div class="media-points">' + (c.points ? c.points.length : 0) + ' 个点位</div>' +
+        '</div>' +
+        '<p class="media-row-desc">' + esc(c.description || '') + '</p>' +
+      '</article>';
+    }).join('');
+  }
+
+  function renderMembers() {
+    var container = document.getElementById('dynamic-members');
+    if (!container || !members.length) return;
+    container.innerHTML = members.slice(0, 4).map(function(m, i) {
+      return '<div class="member-item wf-reveal wf-reveal-delay-' + (i+1) + '">' +
+        '<div>' +
+          '<div class="member-name">' + esc(m.name) + '</div>' +
+          '<p class="member-desc">' + esc(m.description || m.industry || '') + '</p>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  renderStats();
+  renderNews();
+  renderMediaPreview();
+  renderMembers();
+
+  // 动态渲染后补挂入场状态：新建的 .wf-reveal 节点不在 IntersectionObserver 观察列表中，
+  // 若不处理会永久停留在 opacity:0（视觉空白）。此处统一补上 .in-view。
+  document.querySelectorAll('.wf-reveal:not(.in-view)').forEach(function(el){ el.classList.add('in-view'); });
+
+  // 会员风采板块：每个 member-item 点击跳转至会员风采详情页
+  (function bindMemberClicks(){
+    var target = './members.html';
+    document.querySelectorAll('.member-item').forEach(function(item){
+      item.setAttribute('role', 'link');
+      item.setAttribute('tabindex', '0');
+      var nameEl = item.querySelector('.member-name');
+      item.setAttribute('aria-label', '查看会员 ' + (nameEl ? nameEl.textContent.trim() : '') + ' 的详细信息');
+      item.addEventListener('click', function(e){
+        if (e.target.closest('a')) return;
+        window.location.href = target;
+      });
+      item.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          window.location.href = target;
+        }
+      });
+    });
+    // 若后续有动态更新，观察并自动补绑
+    var list = document.getElementById('dynamic-members');
+    if (list && 'MutationObserver' in window) {
+      var mo = new MutationObserver(function(){ bindMemberClicks(); });
+      mo.observe(list, { childList: true });
+    }
+  })();
+
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+})();
+</script>
+<script>lucide.createIcons();</script>
+
+
+</body>
+</html>

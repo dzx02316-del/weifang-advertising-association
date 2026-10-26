@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preflight</title>
+    <style id="theme-vars">
+/* ============================================================
+   潍坊市广告协会官网 — Brand CSS (科技蓝 / Tech Blue)
+   Single brand primary hue (blue) + tints, neutral scale, state colors.
+   Free-explore mode: no secondary/accent hue. Identity styling uses
+   primary tint, neutral tint, layout, and icons only.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Primary (tech blue) scale ---------- */
+  --wf-primary-50:  #ECF3FE;
+  --wf-primary-100: #D7E4FC;
+  --wf-primary-200: #B0C9FA;
+  --wf-primary-300: #82A8F4;
+  --wf-primary-400: #4F84EC;
+  --wf-primary-500: #1659D6;   /* brand primary */
+  --wf-primary-600: #1247AE;
+  --wf-primary-700: #0E3786;
+  --wf-primary-800: #0A2760;
+  --wf-primary-900: #07193D;
+
+  /* ---------- Neutral (slate) scale ---------- */
+  --wf-neutral-50:  #F6F8FC;
+  --wf-neutral-100: #EAEFF6;
+  --wf-neutral-200: #D5DEEC;
+  --wf-neutral-300: #B3C0D6;
+  --wf-neutral-400: #8493AE;
+  --wf-neutral-500: #5C6B85;
+  --wf-neutral-600: #44516A;
+  --wf-neutral-700: #2F3A4F;
+  --wf-neutral-800: #1C2536;
+  --wf-neutral-900: #0F1626;
+
+  /* ---------- Ink (deep navy for dark alternating sections) ---------- */
+  --wf-ink:    #0A1B3D;
+  --wf-ink-2:  #0F2547;
+  --wf-ink-3:  #16315C;
+
+  /* ---------- State colors (semantic status only) ---------- */
+  --state-success: #16A34A;
+  --state-warning: #D97706;
+  --state-error:   #DC2626;
+  --state-info:    #0EA5E9;
+
+  /* ---------- Semantic aliases (light) ---------- */
+  --wf-background: #FFFFFF;
+  --wf-foreground: #0F1626;
+  --wf-card: #FFFFFF;
+  --wf-card-foreground: #1C2536;
+  --wf-popover: #FFFFFF;
+  --wf-popover-foreground: #1C2536;
+  --wf-primary: var(--wf-primary-500);
+  --wf-primary-foreground: #FFFFFF;
+  --wf-muted: #F6F8FC;
+  --wf-muted-foreground: #5C6B85;
+  --wf-border: #E4EAF3;
+  --wf-input: #D5DEEC;
+  --wf-ring: var(--wf-primary-500);
+
+  /* ---------- Radius (restrained) ---------- */
+  --wf-radius-small: 4px;
+  --wf-radius-medium: 8px;
+  --wf-radius-large: 12px;
+  --wf-radius-full: 9999px;
+
+  /* ---------- Typography system ---------- */
+  --wf-font-display: "Sora", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* ---------- Layout rhythm ---------- */
+  --wf-container: 1200px;
+  --wf-section-pad-y: 88px;
+  --wf-section-gap: 64px;
+}
+
+/* ---------- Dark theme override (for .dark sections / dark mode) ---------- */
+.dark {
+  --wf-background: #0A1B3D;
+  --wf-foreground: #EAEFF6;
+  --wf-card: #0F2547;
+  --wf-card-foreground: #D5DEEC;
+  --wf-popover: #0F2547;
+  --wf-popover-foreground: #D5DEEC;
+  --wf-primary: #4F84EC;
+  --wf-primary-foreground: #07193D;
+  --wf-muted: #1C2536;
+  --wf-muted-foreground: #B3C0D6;
+  --wf-border: #2F3A4F;
+  --wf-input: #2F3A4F;
+  --wf-ring: #4F84EC;
+}
+
+/* ---------- Base typography ---------- */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  font-family: var(--wf-font-sans);
+  background-color: var(--wf-background);
+  color: var(--wf-foreground);
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--wf-font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--wf-foreground);
+}
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Brand utility classes ---------- */
+.wf-container {
+  width: 100%;
+  max-width: var(--wf-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Bilingual section header: 中文主标题 + EN 小标签 (raise.cn paradigm) */
+.wf-section-eyebrow {
+  font-family: var(--wf-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--wf-primary-500);
+}
+.wf-section-title {
+  font-family: var(--wf-font-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* MORE link / pill button */
+.wf-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wf-primary-600);
+}
+
+/* Card hover overlay (raise.cn case-card pattern) */
+.wf-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(10,27,61,0) 0%, rgba(10,27,61,0.72) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Static surfaces: border-led, no heavy shadow */
+.wf-surface {
+  background-color: var(--wf-card);
+  border: 1px solid var(--wf-border);
+  border-radius: var(--wf-radius-large);
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--wf-background);
+    --color-foreground: var(--wf-foreground);
+    --color-card: var(--wf-card);
+    --color-card-foreground: var(--wf-card-foreground);
+    --color-popover: var(--wf-popover);
+    --color-popover-foreground: var(--wf-popover-foreground);
+    --color-primary: var(--wf-primary);
+    --color-primary-foreground: var(--wf-primary-foreground);
+    --color-muted: var(--wf-muted);
+    --color-muted-foreground: var(--wf-muted-foreground);
+    --color-border: var(--wf-border);
+    --color-input: var(--wf-input);
+    --color-ring: var(--wf-ring);
+    --radius-sm: var(--wf-radius-small);
+    --radius-md: var(--wf-radius-medium);
+    --radius-lg: var(--wf-radius-large);
+  }
+  @layer base {
+    body { background: var(--wf-background); color: var(--wf-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--wf-background); }
+      .text-background { color: var(--wf-background); }
+      .border-background { border-color: var(--wf-background); }
+      .ring-background { --tw-ring-color: var(--wf-background); }
+      .bg-foreground { background-color: var(--wf-foreground); }
+      .text-foreground { color: var(--wf-foreground); }
+      .border-foreground { border-color: var(--wf-foreground); }
+      .ring-foreground { --tw-ring-color: var(--wf-foreground); }
+      .bg-card { background-color: var(--wf-card); }
+      .text-card { color: var(--wf-card); }
+      .border-card { border-color: var(--wf-card); }
+      .ring-card { --tw-ring-color: var(--wf-card); }
+      .bg-card-foreground { background-color: var(--wf-card-foreground); }
+      .text-card-foreground { color: var(--wf-card-foreground); }
+      .border-card-foreground { border-color: var(--wf-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--wf-card-foreground); }
+      .bg-popover { background-color: var(--wf-popover); }
+      .text-popover { color: var(--wf-popover); }
+      .border-popover { border-color: var(--wf-popover); }
+      .ring-popover { --tw-ring-color: var(--wf-popover); }
+      .bg-popover-foreground { background-color: var(--wf-popover-foreground); }
+      .text-popover-foreground { color: var(--wf-popover-foreground); }
+      .border-popover-foreground { border-color: var(--wf-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--wf-popover-foreground); }
+      .bg-primary { background-color: var(--wf-primary); }
+      .text-primary { color: var(--wf-primary); }
+      .border-primary { border-color: var(--wf-primary); }
+      .ring-primary { --tw-ring-color: var(--wf-primary); }
+      .bg-primary-foreground { background-color: var(--wf-primary-foreground); }
+      .text-primary-foreground { color: var(--wf-primary-foreground); }
+      .border-primary-foreground { border-color: var(--wf-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--wf-primary-foreground); }
+      .bg-muted { background-color: var(--wf-muted); }
+      .text-muted { color: var(--wf-muted); }
+      .border-muted { border-color: var(--wf-muted); }
+      .ring-muted { --tw-ring-color: var(--wf-muted); }
+      .bg-muted-foreground { background-color: var(--wf-muted-foreground); }
+      .text-muted-foreground { color: var(--wf-muted-foreground); }
+      .border-muted-foreground { border-color: var(--wf-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--wf-muted-foreground); }
+      .bg-border { background-color: var(--wf-border); }
+      .text-border { color: var(--wf-border); }
+      .border-border { border-color: var(--wf-border); }
+      .ring-border { --tw-ring-color: var(--wf-border); }
+      .bg-input { background-color: var(--wf-input); }
+      .text-input { color: var(--wf-input); }
+      .border-input { border-color: var(--wf-input); }
+      .ring-input { --tw-ring-color: var(--wf-input); }
+      .bg-ring { background-color: var(--wf-ring); }
+      .text-ring { color: var(--wf-ring); }
+      .border-ring { border-color: var(--wf-ring); }
+      .ring-ring { --tw-ring-color: var(--wf-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <main>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!-- ============================================================
+     PROJECT SHELL — shared header + footer fragment
+     All three pages (index / news / media) copy this verbatim.
+     Active nav item is marked via data-active="true" per page.
+     Wired nav items carry data-dom-id for cross-page navigation.
+     ============================================================ -->
+
+<!-- ============ SITE HEADER ============ -->
+<header class="wf-site-header">
+  <!-- Utility top bar -->
+  <div class="wf-topbar">
+    <div class="wf-container wf-topbar-inner">
+      <span class="wf-topbar-welcome">欢迎来到潍坊市广告协会官方网站</span>
+      <div class="wf-topbar-actions">
+        <a href="/pages/contact.html" class="wf-topbar-link"><i data-lucide="phone" class="wf-ico-sm"></i>0536-8888XXX</a>
+        <a href="/pages/contact.html" class="wf-topbar-link"><i data-lucide="mail" class="wf-ico-sm"></i>wf-ad@126.com</a>
+        <a href="/pages/service.html" class="wf-topbar-cta">入会申请</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <div class="wf-mainbar">
+    <div class="wf-container wf-mainbar-inner">
+      <a href="/pages/index.html" class="wf-brand">
+        <span class="wf-brand-mark"><i data-lucide="megaphone"></i></span>
+        <span class="wf-brand-text">
+          <span class="wf-brand-cn">潍坊市广告协会</span>
+          <span class="wf-brand-en">WEIFANG ADVERTISING ASSOCIATION</span>
+        </span>
+      </a>
+      <nav class="wf-nav" aria-label="主导航">
+        <a href="/pages/index.html" class="wf-nav-item" data-nav-key="home" data-dom-id="nav-home">首页</a>
+        <a href="/pages/about.html" class="wf-nav-item" data-nav-key="about">关于协会</a>
+        <a href="/pages/news.html" class="wf-nav-item" data-nav-key="news" data-dom-id="nav-news">协会动态</a>
+        <a href="/pages/policy.html" class="wf-nav-item" data-nav-key="policy">政策法规</a>
+        <a href="/pages/service.html" class="wf-nav-item" data-nav-key="service">会员服务</a>
+        <a href="/pages/members.html" class="wf-nav-item" data-nav-key="member">会员风采</a>
+        <a href="/pages/media.html" class="wf-nav-item wf-nav-highlight" data-nav-key="media" data-dom-id="nav-media">潍广通</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SITE FOOTER ============ -->
+<footer class="wf-site-footer">
+  <div class="wf-container wf-footer-grid">
+    <div class="wf-footer-col wf-footer-about">
+      <div class="wf-footer-brand">
+        <span class="wf-brand-mark"><i data-lucide="megaphone"></i></span>
+        <span class="wf-brand-cn">潍坊市广告协会</span>
+      </div>
+      <p class="wf-footer-desc">潍坊市广告协会是经潍坊市民政局批准成立的社会团体，致力于服务广告行业发展、规范行业自律、搭建政企桥梁，推动潍坊广告产业高质量发展。</p>
+    </div>
+    <div class="wf-footer-col">
+      <h4 class="wf-footer-title">快速导航</h4>
+      <ul class="wf-footer-links">
+        <li><a href="/pages/index.html">首页</a></li>
+        <li><a href="/pages/news.html">协会动态</a></li>
+        <li><a href="/pages/media.html">潍广通</a></li>
+        <li><a href="/pages/about.html">关于协会</a></li>
+        <li><a href="/pages/policy.html">政策法规</a></li>
+        <li><a href="/pages/service.html">会员服务</a></li>
+        <li><a href="/pages/members.html">会员风采</a></li>
+        <li><a href="/pages/contact.html">联系我们</a></li>
+      </ul>
+    </div>
+    <div class="wf-footer-col">
+      <h4 class="wf-footer-title">联系我们</h4>
+      <ul class="wf-footer-links wf-footer-contact">
+        <li><i data-lucide="map-pin" class="wf-ico-sm"></i>山东省潍坊市奎文区XX路XX号</li>
+        <li><i data-lucide="phone" class="wf-ico-sm"></i>0536-8888XXX</li>
+        <li><i data-lucide="mail" class="wf-ico-sm"></i>wf-ad@126.com</li>
+      </ul>
+    </div>
+    <div class="wf-footer-col wf-footer-qr">
+      <h4 class="wf-footer-title">关注我们</h4>
+      <div class="wf-qr-box"><i data-lucide="qr-code"></i></div>
+      <span class="wf-qr-label">官方微信</span>
+    </div>
+  </div>
+  <div class="wf-footer-bottom">
+    <div class="wf-container wf-footer-bottom-inner">
+      <div class="wf-footer-friendly">
+        <span class="wf-footer-friendly-label">友情链接：</span>
+        <a href="#">中国广告协会</a>
+        <a href="#">山东省广告协会</a>
+        <a href="#">潍坊市市场监督管理局</a>
+        <a href="#">潍坊市广告产业园</a>
+      </div>
+      <p class="wf-footer-copy">© 2026 潍坊市广告协会 版权所有　鲁ICP备XXXXXXXX号</p>
+    </div>
+  </div>
+</footer>

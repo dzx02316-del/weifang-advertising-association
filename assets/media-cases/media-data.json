@@ -1,0 +1,284 @@
+{
+  "categories": [
+    {
+      "slug": "led-screen",
+      "name": "LED大屏",
+      "section": "户外大牌",
+      "sectionEn": "OUTDOOR",
+      "icon": "monitor",
+      "desc": "高人流商圈LED巨幕，全天候曝光，动态画面强力吸睛",
+      "companies": [
+        {
+          "slug": "hantang",
+          "name": "山东汉唐传媒有限公司",
+          "points": ["泰华假日广场外LED", "泰华E座红枕门口LED", "泰华中兴街入口LED", "泰华新天地户外LED", "万达广场LED", "谷德茂LED", "谷德广场LED", "坊子泰华城LED", "上城国际佳乐家LED", "东盛广场LED"],
+          "desc": "16块核心商圈LED大屏，覆盖泰华、万达、谷德等顶级商圈"
+        },
+        {
+          "slug": "fenzhong-xin-cainiao",
+          "name": "分众传媒潍坊分公司",
+          "points": ["人民广场户外LED大屏（12m×9m）"],
+          "desc": "人民广场核心商圈，108㎡户外巨幕"
+        },
+        {
+          "slug": "daoersen",
+          "name": "山东道尔森传媒服务有限公司",
+          "points": ["富华桥LED屏（27m×2.8m）", "人民医院桥LED屏（15.4m×3.0m）"],
+          "desc": "跨桥LED屏，覆盖北海路、虞河路主干道"
+        },
+        {
+          "slug": "hengrui",
+          "name": "潍坊恒瑞文化发展有限公司",
+          "points": ["潍坊市区部分路口楼体大屏媒体"],
+          "desc": "国企背景，城市核心路口楼体大屏"
+        }
+      ]
+    },
+    {
+      "slug": "highway-pillar",
+      "name": "高速单立柱",
+      "section": "户外大牌",
+      "sectionEn": "OUTDOOR",
+      "icon": "signpost",
+      "desc": "高速公路出入口与国道沿线，远距离视觉冲击，车流必经",
+      "companies": [
+        {
+          "slug": "longxing",
+          "name": "山东龙行十万传媒有限公司",
+          "points": ["诸城217国道单立柱（18.5m×6.5m，2块）", "深海高速威海收费站雨棚（60m×5m）"],
+          "desc": "覆盖山东13条高速的龙门架与单立柱资源"
+        }
+      ]
+    },
+    {
+      "slug": "rooftop-billboard",
+      "name": "楼顶大牌",
+      "section": "户外大牌",
+      "sectionEn": "OUTDOOR",
+      "icon": "building-2",
+      "desc": "城区主干道楼宇顶部，品牌地标式高空展示",
+      "companies": [
+        {
+          "slug": "fenzhong-xin-cainiao",
+          "name": "分众传媒潍坊分公司",
+          "points": ["丰橘园9楼三面翻户外大牌（32m×11m）", "丰橘园5楼三面翻户外大牌（32m×11m）"],
+          "desc": "潍城区和平路核心地段，单块352㎡三面翻大牌"
+        }
+      ]
+    },
+    {
+      "slug": "overpass-bridge",
+      "name": "跨线桥广告",
+      "section": "户外大牌",
+      "sectionEn": "OUTDOOR",
+      "icon": "bridge",
+      "desc": "城市高架跨线桥与人行天桥，车流人流双覆盖，24小时持续传播",
+      "companies": [
+        {
+          "slug": "daoersen",
+          "name": "山东道尔森传媒服务有限公司",
+          "points": ["苇湾桥灯箱", "梨园桥灯箱", "南胡西桥灯箱", "早春园桥灯箱", "南胡东桥灯箱", "信息学院桥灯箱", "十笏园桥灯箱", "潍坊技师学院桥灯箱", "艺术中心桥灯箱", "植物园东桥灯箱", "圣荣广场桥灯箱", "双语学校桥灯箱", "人民商场桥三面翻", "赵疃桥三面翻", "医学院桥三面翻", "植物园东桥三面翻"],
+          "desc": "潍坊城区16座人行天桥，含灯箱与三面翻两种形式"
+        },
+        {
+          "slug": "longxing",
+          "name": "山东龙行十万传媒有限公司",
+          "points": ["青兰高速诸城跨线桥（50m×4m，6块）"],
+          "desc": "高速公路跨桥广告，远距离视觉冲击"
+        },
+        {
+          "slug": "hengrui",
+          "name": "潍坊恒瑞文化发展有限公司",
+          "points": ["潍坊市区人行天桥", "渤海路下穿桥媒体"],
+          "desc": "国企独家运营，市区核心天桥与下穿桥"
+        }
+      ]
+    },
+    {
+      "slug": "elevator-poster",
+      "name": "电梯海报",
+      "section": "电梯媒体",
+      "sectionEn": "ELEVATOR",
+      "icon": "image",
+      "desc": "住宅/写字楼电梯框架海报，精准触达都市主流消费人群",
+      "companies": [
+        {
+          "slug": "hongyi",
+          "name": "弘易传媒",
+          "points": ["全国200余座城市中高端社区与写字楼电梯海报"],
+          "desc": "国内领军电梯媒体集团，覆盖全国主流社区"
+        },
+        {
+          "slug": "fenzhong-xin-cainiao",
+          "name": "分众传媒潍坊分公司",
+          "points": ["小区平面框架（42.5×57.5cm，497块）"],
+          "desc": "潍坊小区电梯框架海报，497块点位"
+        }
+      ]
+    },
+    {
+      "slug": "elevator-tv",
+      "name": "电梯电视",
+      "section": "电梯媒体",
+      "sectionEn": "ELEVATOR",
+      "icon": "tv",
+      "desc": "电梯内视频广告，动态展示，高频触达",
+      "companies": [
+        {
+          "slug": "hongyi",
+          "name": "弘易传媒",
+          "points": ["全国200余座城市电梯电视网络"],
+          "desc": "电梯场景视频媒体，覆盖中高端社区与写字楼"
+        }
+      ]
+    },
+    {
+      "slug": "smart-screen",
+      "name": "智能屏",
+      "section": "电梯媒体",
+      "sectionEn": "ELEVATOR",
+      "icon": "cpu",
+      "desc": "AI智能投放与程序化购买，数字化精准运营",
+      "companies": [
+        {
+          "slug": "hongyi",
+          "name": "弘易传媒",
+          "points": ["全国200余座城市社区与写字楼智能屏"],
+          "desc": "智能屏媒体矩阵，支持程序化精准投放"
+        },
+        {
+          "slug": "fenzhong-xin-cainiao",
+          "name": "分众传媒潍坊分公司",
+          "points": ["视频联播网（323块，1920×1080像素）"],
+          "desc": "视频联播网，323块点位"
+        }
+      ]
+    },
+    {
+      "slug": "bus-body",
+      "name": "公交车身",
+      "section": "交通媒体",
+      "sectionEn": "TRANSIT",
+      "icon": "bus",
+      "desc": "全车身覆膜广告，移动曝光，覆盖全城148条公交线路",
+      "companies": [
+        {
+          "slug": "gongjiao",
+          "name": "潍坊市公共交通集团有限公司广告分公司",
+          "points": ["市区1200余台公交车，148条公交线路"],
+          "desc": "潍坊城区公交车体广告独家运营商，国企背景"
+        }
+      ]
+    },
+    {
+      "slug": "bus-shelter",
+      "name": "公交候车亭",
+      "section": "交通媒体",
+      "sectionEn": "TRANSIT",
+      "icon": "shelter",
+      "desc": "站台灯箱，候车黄金视线，覆盖全城公交站点",
+      "companies": [
+        {
+          "slug": "gongjiao",
+          "name": "潍坊市公共交通集团有限公司广告分公司",
+          "points": ["350余块公交候车亭", "站点冠名", "公交线路商业冠名"],
+          "desc": "全市350余块候车亭广告，含站点与线路冠名"
+        }
+      ]
+    },
+    {
+      "slug": "taxi-top",
+      "name": "出租车顶灯屏",
+      "section": "交通媒体",
+      "sectionEn": "TRANSIT",
+      "icon": "car",
+      "desc": "车载LED屏，城市穿梭移动曝光",
+      "companies": []
+    },
+    {
+      "slug": "hsr-lightbox",
+      "name": "高铁站灯箱",
+      "section": "交通媒体",
+      "sectionEn": "TRANSIT",
+      "icon": "train-front",
+      "desc": "高铁站候车大厅与通廊灯箱，高端客流精准触达",
+      "companies": [
+        {
+          "slug": "fenzhong-xin-cainiao",
+          "name": "分众传媒潍坊分公司",
+          "points": ["潍坊北站售票大厅灯箱", "进站大厅灯箱", "候车厅商业夹层", "候车大厅检票口旁落地灯箱", "进站通廊落地灯箱", "直梯灯箱（32块）", "城市通廊墙面/门头灯箱", "站台出站楼梯楣头灯箱", "出站厅落地灯箱"],
+          "desc": "潍坊北站全区域灯箱媒体，从售票到出站全链路覆盖"
+        },
+        {
+          "slug": "hengrui",
+          "name": "潍坊恒瑞文化发展有限公司",
+          "points": ["潍坊站站内媒体", "潍坊北站站内媒体"],
+          "desc": "济南铁路局内多站独家招商运营权，国企背景"
+        }
+      ]
+    },
+    {
+      "slug": "community-barrier",
+      "name": "小区道闸",
+      "section": "社区媒体",
+      "sectionEn": "COMMUNITY",
+      "icon": "fence",
+      "desc": "小区出入口道闸广告，业主进出必经通道",
+      "companies": []
+    },
+    {
+      "slug": "access-control",
+      "name": "门禁广告",
+      "section": "社区媒体",
+      "sectionEn": "COMMUNITY",
+      "icon": "door-closed",
+      "desc": "单元门禁屏，最后十米精准触达",
+      "companies": []
+    },
+    {
+      "slug": "parcel-locker",
+      "name": "快递柜屏",
+      "section": "社区媒体",
+      "sectionEn": "COMMUNITY",
+      "icon": "package",
+      "desc": "智能快递柜屏幕，高频取件触达",
+      "companies": []
+    },
+    {
+      "slug": "cinema-pre-roll",
+      "name": "影院映前",
+      "section": "场景媒体",
+      "sectionEn": "SCENE",
+      "icon": "film",
+      "desc": "电影映前广告，沉浸式大银幕体验",
+      "companies": []
+    },
+    {
+      "slug": "gym",
+      "name": "健身房",
+      "section": "场景媒体",
+      "sectionEn": "SCENE",
+      "icon": "dumbbell",
+      "desc": "运动场景屏，健康人群精准触达",
+      "companies": []
+    },
+    {
+      "slug": "restaurant-sticker",
+      "name": "餐饮桌贴",
+      "section": "场景媒体",
+      "sectionEn": "SCENE",
+      "icon": "utensils",
+      "desc": "餐桌桌面广告，用餐时长深度曝光",
+      "companies": []
+    },
+    {
+      "slug": "pharmacy-lightbox",
+      "name": "药店医院灯箱",
+      "section": "场景媒体",
+      "sectionEn": "SCENE",
+      "icon": "pill",
+      "desc": "健康场景灯箱，精准触达健康需求人群",
+      "companies": []
+    }
+  ]
+}

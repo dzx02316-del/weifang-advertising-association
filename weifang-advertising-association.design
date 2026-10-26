@@ -1,0 +1,4913 @@
+{
+  "data": [
+    {
+      "id": "page-index",
+      "title": "首页",
+      "type": "page",
+      "version": 2,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 36,
+        "y": 10.5,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 5091,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-ca4e9096",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-news",
+      "title": "协会动态",
+      "type": "page",
+      "version": 2,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 624,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2713,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-0a151d56",
+          "measuredAt": 1792374892873
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/news.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media",
+      "title": "潍广通",
+      "type": "page",
+      "version": 2,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 1240,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 4158,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-1ca643f5",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": true
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-led-screen",
+            "targetPageId": "page-media-detail-led-screen",
+            "transitionLabel": "LED大屏",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-highway-pillar",
+            "targetPageId": "page-media-detail-highway-pillar",
+            "transitionLabel": "高速单立柱",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-rooftop-billboard",
+            "targetPageId": "page-media-detail-rooftop-billboard",
+            "transitionLabel": "楼顶大牌",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-overpass-bridge",
+            "targetPageId": "page-media-detail-overpass-bridge",
+            "transitionLabel": "跨线桥广告",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-elevator-poster",
+            "targetPageId": "page-media-detail-elevator-poster",
+            "transitionLabel": "电梯海报",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-elevator-tv",
+            "targetPageId": "page-media-detail-elevator-tv",
+            "transitionLabel": "电梯电视",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-smart-screen",
+            "targetPageId": "page-media-detail-smart-screen",
+            "transitionLabel": "智能屏",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-bus-body",
+            "targetPageId": "page-media-detail-bus-body",
+            "transitionLabel": "公交车身",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-bus-shelter",
+            "targetPageId": "page-media-detail-bus-shelter",
+            "transitionLabel": "公交候车亭",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-taxi-top",
+            "targetPageId": "page-media-detail-taxi-top",
+            "transitionLabel": "出租车顶灯屏",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-hsr-lightbox",
+            "targetPageId": "page-media-detail-hsr-lightbox",
+            "transitionLabel": "高铁站灯箱",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-community-barrier",
+            "targetPageId": "page-media-detail-community-barrier",
+            "transitionLabel": "小区道闸",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-access-control",
+            "targetPageId": "page-media-detail-access-control",
+            "transitionLabel": "门禁广告",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-parcel-locker",
+            "targetPageId": "page-media-detail-parcel-locker",
+            "transitionLabel": "快递柜屏",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-cinema-pre-roll",
+            "targetPageId": "page-media-detail-cinema-pre-roll",
+            "transitionLabel": "影院映前",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-gym",
+            "targetPageId": "page-media-detail-gym",
+            "transitionLabel": "健身房",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-restaurant-sticker",
+            "targetPageId": "page-media-detail-restaurant-sticker",
+            "transitionLabel": "餐饮桌贴",
+            "hideEdge": false
+          },
+          {
+            "domId": "media-card-pharmacy-lightbox",
+            "targetPageId": "page-media-detail-pharmacy-lightbox",
+            "transitionLabel": "药店医院灯箱",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-about-new",
+      "title": "关于协会",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1790144293869,
+      "canvasData": {
+        "x": 1860,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 4061,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-eea39fcb",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/about-new.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-contact",
+      "title": "联系我们",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 2480,
+        "y": -20,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2335,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-2c95e04c",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/contact.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-members",
+      "title": "会员风采",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 3080,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 4012,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-4de21f4f",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/members.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-fenzhong-xin-cainiao",
+            "targetPageId": "page-member-detail-fenzhong-xin-cainiao",
+            "transitionLabel": "点击「分众传媒潍坊分公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-baier",
+            "targetPageId": "page-member-detail-baier",
+            "transitionLabel": "点击「山东拜尔文化科技有限公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-daoersen",
+            "targetPageId": "page-member-detail-daoersen",
+            "transitionLabel": "点击「山东道尔森传媒服务有限公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-jinqiao",
+            "targetPageId": "page-member-detail-jinqiao",
+            "transitionLabel": "点击「山东金桥广告装饰有限公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-longxing",
+            "targetPageId": "page-member-detail-longxing",
+            "transitionLabel": "点击「山东龙行十万传媒有限公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-hongyi",
+            "targetPageId": "page-member-detail-hongyi",
+            "transitionLabel": "点击「弘易」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-hengrui",
+            "targetPageId": "page-member-detail-hengrui",
+            "transitionLabel": "点击「恒瑞文化」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-shengli",
+            "targetPageId": "page-member-detail-shengli",
+            "transitionLabel": "点击「晟利」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-xin-ao",
+            "targetPageId": "page-member-detail-xin-ao",
+            "transitionLabel": "点击「欣澳」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-hantang",
+            "targetPageId": "page-member-detail-hantang",
+            "transitionLabel": "点击「汉唐」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-gongjiao",
+            "targetPageId": "page-member-detail-gongjiao",
+            "transitionLabel": "点击「潍坊市公共交通集团有限公司广告分公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-shunze",
+            "targetPageId": "page-member-detail-shunze",
+            "transitionLabel": "点击「潍坊顺泽信息科技有限公司」卡片 → 详情",
+            "hideEdge": false
+          },
+          {
+            "domId": "mem-card-zhishang",
+            "targetPageId": "page-member-detail-zhishang",
+            "transitionLabel": "点击「山东至上品牌管理有限公司」卡片 → 详情",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-policy",
+      "title": "政策法规",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 3700,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2396,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-2a2d0319",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/policy.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-service",
+      "title": "会员服务",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 4320,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2991,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-4620caec",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/service.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "城市主视觉",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 24,
+        "y": 2412,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-city.jpg"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "户外大牌媒体",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 644,
+        "y": 2412,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/media-outdoor.jpg"
+      }
+    },
+    {
+      "id": "image-003",
+      "title": "电梯媒体",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 1264,
+        "y": 2412,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/media-elevator.jpg"
+      }
+    },
+    {
+      "id": "image-004",
+      "title": "交通媒体",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 1884,
+        "y": 2412,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/media-transit.jpg"
+      }
+    },
+    {
+      "id": "image-005",
+      "title": "社区媒体",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 2480,
+        "y": 2135,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/media-community.jpg"
+      }
+    },
+    {
+      "id": "image-006",
+      "title": "媒体场景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 3100,
+        "y": 2135,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/media-scene.jpg"
+      }
+    },
+    {
+      "id": "image-007",
+      "title": "新闻活动",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 3720,
+        "y": 2135,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/news-activity.jpg"
+      }
+    },
+    {
+      "id": "image-008",
+      "title": "会员风采",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 4340,
+        "y": 2135,
+        "naturalSize": {
+          "width": 2240,
+          "height": 1680
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-showcase.jpg"
+      }
+    },
+    {
+      "id": "image-009",
+      "title": "新闻Banner背景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 0,
+        "y": 3900,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-news-banner.jpg"
+      }
+    },
+    {
+      "id": "image-010",
+      "title": "新闻Banner动效",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 620,
+        "y": 3900,
+        "naturalSize": {
+          "width": 640,
+          "height": 360
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-news-banner.gif"
+      }
+    },
+    {
+      "id": "image-011",
+      "title": "CTA城市背景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 1240,
+        "y": 3900,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-cta-city.jpg"
+      }
+    },
+    {
+      "id": "image-012",
+      "title": "CTA城市动效",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 1860,
+        "y": 3900,
+        "naturalSize": {
+          "width": 640,
+          "height": 360
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-cta-city.gif"
+      }
+    },
+    {
+      "id": "image-013",
+      "title": "媒体抽象背景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 2480,
+        "y": 3900,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-media-abstract.jpg"
+      }
+    },
+    {
+      "id": "image-014",
+      "title": "媒体抽象动效",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 3100,
+        "y": 3900,
+        "naturalSize": {
+          "width": 640,
+          "height": 360
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-media-abstract.gif"
+      }
+    },
+    {
+      "id": "image-015",
+      "title": "会员背景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 3720,
+        "y": 3900,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-member.jpg"
+      }
+    },
+    {
+      "id": "image-016",
+      "title": "城市主视觉动效",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 4340,
+        "y": 3900,
+        "naturalSize": {
+          "width": 640,
+          "height": 360
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-city.gif"
+      }
+    },
+    {
+      "id": "image-017",
+      "title": "会员动效",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1785312773111,
+      "canvasData": {
+        "x": 0,
+        "y": 5665,
+        "naturalSize": {
+          "width": 640,
+          "height": 360
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/bg-member.gif"
+      }
+    },
+    {
+      "id": "image-018",
+      "title": "微信公众号二维码",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144293869,
+      "canvasData": {
+        "x": 3100,
+        "y": 2680,
+        "naturalSize": {
+          "width": 344,
+          "height": 344
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/qrcode-wechat.jpg"
+      }
+    },
+    {
+      "id": "image-019",
+      "title": "logo-white",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 0,
+        "y": 3750,
+        "naturalSize": {
+          "width": 1005,
+          "height": 473
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/logo-white.png"
+      }
+    },
+    {
+      "id": "image-020",
+      "title": "logo",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 620,
+        "y": 3750,
+        "naturalSize": {
+          "width": 1005,
+          "height": 473
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/logo.png"
+      }
+    },
+    {
+      "id": "image-021",
+      "title": "拜尔文化LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5000,
+        "y": 2135,
+        "naturalSize": {
+          "width": 3544,
+          "height": 3544
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baer.png"
+      }
+    },
+    {
+      "id": "image-022",
+      "title": "公交广告LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5120,
+        "y": 2135,
+        "naturalSize": {
+          "width": 640,
+          "height": 640
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-bus.jpg"
+      }
+    },
+    {
+      "id": "image-023",
+      "title": "汉唐传媒LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5240,
+        "y": 2135,
+        "naturalSize": {
+          "width": 977,
+          "height": 239
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hantang.png"
+      }
+    },
+    {
+      "id": "image-024",
+      "title": "恒瑞文化LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5360,
+        "y": 2135,
+        "naturalSize": {
+          "width": 591,
+          "height": 592
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hengrui.jpg"
+      }
+    },
+    {
+      "id": "image-025",
+      "title": "弘易传媒LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5480,
+        "y": 2135,
+        "naturalSize": {
+          "width": 839,
+          "height": 839
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hongyi.png"
+      }
+    },
+    {
+      "id": "image-026",
+      "title": "金桥广告LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5600,
+        "y": 2135,
+        "naturalSize": {
+          "width": 438,
+          "height": 438
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao.png"
+      }
+    },
+    {
+      "id": "image-027",
+      "title": "龙行十万传媒LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5720,
+        "y": 2135,
+        "naturalSize": {
+          "width": 355,
+          "height": 355
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing.png"
+      }
+    },
+    {
+      "id": "image-028",
+      "title": "晟利信息LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5840,
+        "y": 2135,
+        "naturalSize": {
+          "width": 3623,
+          "height": 941
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shengli.jpg"
+      }
+    },
+    {
+      "id": "image-029",
+      "title": "顺泽信息LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1790144332401,
+      "canvasData": {
+        "x": 5960,
+        "y": 2135,
+        "naturalSize": {
+          "width": 1280,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze.png"
+      }
+    },
+    {
+      "id": "image-030",
+      "title": "member-baier-gallery-1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151270,
+      "canvasData": {
+        "x": 6500,
+        "y": 0,
+        "naturalSize": {
+          "width": 1706,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-1.jpg"
+      }
+    },
+    {
+      "id": "image-031",
+      "title": "member-baier-gallery-2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151271,
+      "canvasData": {
+        "x": 6820,
+        "y": 0,
+        "naturalSize": {
+          "width": 850,
+          "height": 565
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-2.jpg"
+      }
+    },
+    {
+      "id": "image-032",
+      "title": "member-baier-gallery-3",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151272,
+      "canvasData": {
+        "x": 7140,
+        "y": 0,
+        "naturalSize": {
+          "width": 1935,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-3.jpg"
+      }
+    },
+    {
+      "id": "image-033",
+      "title": "member-baier-gallery-4",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151273,
+      "canvasData": {
+        "x": 7460,
+        "y": 0,
+        "naturalSize": {
+          "width": 1706,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-4.jpg"
+      }
+    },
+    {
+      "id": "image-034",
+      "title": "member-baier-gallery-5",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151274,
+      "canvasData": {
+        "x": 6500,
+        "y": 260,
+        "naturalSize": {
+          "width": 945,
+          "height": 530
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-5.jpg"
+      }
+    },
+    {
+      "id": "image-035",
+      "title": "member-baier-gallery-6",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151275,
+      "canvasData": {
+        "x": 6820,
+        "y": 260,
+        "naturalSize": {
+          "width": 1707,
+          "height": 1280
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-gallery-6.jpg"
+      }
+    },
+    {
+      "id": "image-036",
+      "title": "member-baier-logo-1b9d4f3971c467fc5708e489bcff1544",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151276,
+      "canvasData": {
+        "x": 7140,
+        "y": 260,
+        "naturalSize": {
+          "width": 3544,
+          "height": 3544
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-baier-logo-1b9d4f3971c467fc5708e489bcff1544.png"
+      }
+    },
+    {
+      "id": "image-037",
+      "title": "member-fenzhong-xin-cainiao-gallery-18b49dfb-90ea-486f-965c-6ea1c5bb6914",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151277,
+      "canvasData": {
+        "x": 7460,
+        "y": 260,
+        "naturalSize": {
+          "width": 700,
+          "height": 333
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-18b49dfb-90ea-486f-965c-6ea1c5bb6914.png"
+      }
+    },
+    {
+      "id": "image-038",
+      "title": "member-fenzhong-xin-cainiao-gallery-1c79dc59-8f2b-403d-83c8-cf05ed374f91",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151278,
+      "canvasData": {
+        "x": 6500,
+        "y": 520,
+        "naturalSize": {
+          "width": 694,
+          "height": 395
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-1c79dc59-8f2b-403d-83c8-cf05ed374f91.png"
+      }
+    },
+    {
+      "id": "image-039",
+      "title": "member-fenzhong-xin-cainiao-gallery-3140fe57-e123-4023-a743-5ae1ae0ebd5c",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151279,
+      "canvasData": {
+        "x": 6820,
+        "y": 520,
+        "naturalSize": {
+          "width": 702,
+          "height": 376
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-3140fe57-e123-4023-a743-5ae1ae0ebd5c.png"
+      }
+    },
+    {
+      "id": "image-040",
+      "title": "member-fenzhong-xin-cainiao-gallery-320fbf7e-260a-4e19-aeca-63d83de2e18e",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151280,
+      "canvasData": {
+        "x": 7140,
+        "y": 520,
+        "naturalSize": {
+          "width": 668,
+          "height": 383
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-320fbf7e-260a-4e19-aeca-63d83de2e18e.png"
+      }
+    },
+    {
+      "id": "image-041",
+      "title": "member-fenzhong-xin-cainiao-gallery-4066d2e8-f27f-4536-a944-7f4cf5b2e7de",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151281,
+      "canvasData": {
+        "x": 7460,
+        "y": 520,
+        "naturalSize": {
+          "width": 695,
+          "height": 385
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-4066d2e8-f27f-4536-a944-7f4cf5b2e7de.png"
+      }
+    },
+    {
+      "id": "image-042",
+      "title": "member-fenzhong-xin-cainiao-gallery-4a654248-be43-405e-b8bc-1ab2ac729c47",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151282,
+      "canvasData": {
+        "x": 6500,
+        "y": 780,
+        "naturalSize": {
+          "width": 686,
+          "height": 320
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-4a654248-be43-405e-b8bc-1ab2ac729c47.png"
+      }
+    },
+    {
+      "id": "image-043",
+      "title": "member-fenzhong-xin-cainiao-gallery-6aac7d06-4427-4153-99e8-bce57c9e5d66",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151283,
+      "canvasData": {
+        "x": 6820,
+        "y": 780,
+        "naturalSize": {
+          "width": 714,
+          "height": 336
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-6aac7d06-4427-4153-99e8-bce57c9e5d66.png"
+      }
+    },
+    {
+      "id": "image-044",
+      "title": "member-fenzhong-xin-cainiao-gallery-70276652-c5a8-4333-8a04-b8b97c75dc7b",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151284,
+      "canvasData": {
+        "x": 7140,
+        "y": 780,
+        "naturalSize": {
+          "width": 695,
+          "height": 388
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-70276652-c5a8-4333-8a04-b8b97c75dc7b.png"
+      }
+    },
+    {
+      "id": "image-045",
+      "title": "member-fenzhong-xin-cainiao-gallery-aa9d8b35-4531-4693-87d4-16a636eb3ab5",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151285,
+      "canvasData": {
+        "x": 7460,
+        "y": 780,
+        "naturalSize": {
+          "width": 565,
+          "height": 261
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-aa9d8b35-4531-4693-87d4-16a636eb3ab5.png"
+      }
+    },
+    {
+      "id": "image-046",
+      "title": "member-fenzhong-xin-cainiao-gallery-c04a641b-246f-4dee-8098-f5f9e67fe4eb",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151286,
+      "canvasData": {
+        "x": 6500,
+        "y": 1040,
+        "naturalSize": {
+          "width": 694,
+          "height": 339
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-c04a641b-246f-4dee-8098-f5f9e67fe4eb.png"
+      }
+    },
+    {
+      "id": "image-047",
+      "title": "member-fenzhong-xin-cainiao-gallery-___5_______",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151287,
+      "canvasData": {
+        "x": 6820,
+        "y": 1040,
+        "naturalSize": {
+          "width": 402,
+          "height": 257
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-___5_______.png"
+      }
+    },
+    {
+      "id": "image-048",
+      "title": "member-fenzhong-xin-cainiao-gallery-___9_______",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151288,
+      "canvasData": {
+        "x": 7140,
+        "y": 1040,
+        "naturalSize": {
+          "width": 402,
+          "height": 260
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-___9_______.png"
+      }
+    },
+    {
+      "id": "image-049",
+      "title": "member-fenzhong-xin-cainiao-gallery-______LED_____",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151289,
+      "canvasData": {
+        "x": 7460,
+        "y": 1040,
+        "naturalSize": {
+          "width": 1080,
+          "height": 256
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-______LED_____.webp"
+      }
+    },
+    {
+      "id": "image-050",
+      "title": "member-fenzhong-xin-cainiao-gallery-________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151290,
+      "canvasData": {
+        "x": 6500,
+        "y": 1300,
+        "naturalSize": {
+          "width": 694,
+          "height": 352
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-________.png"
+      }
+    },
+    {
+      "id": "image-051",
+      "title": "member-fenzhong-xin-cainiao-gallery-_________1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151291,
+      "canvasData": {
+        "x": 6820,
+        "y": 1300,
+        "naturalSize": {
+          "width": 695,
+          "height": 364
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-_________1.png"
+      }
+    },
+    {
+      "id": "image-052",
+      "title": "member-fenzhong-xin-cainiao-gallery-_______",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151292,
+      "canvasData": {
+        "x": 7140,
+        "y": 1300,
+        "naturalSize": {
+          "width": 270,
+          "height": 324
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-_______.png"
+      }
+    },
+    {
+      "id": "image-053",
+      "title": "member-fenzhong-xin-cainiao-gallery-_________2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151293,
+      "canvasData": {
+        "x": 7460,
+        "y": 1300,
+        "naturalSize": {
+          "width": 341,
+          "height": 281
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-fenzhong-xin-cainiao-gallery-_________2.png"
+      }
+    },
+    {
+      "id": "image-054",
+      "title": "member-gongjiao-gallery-_________________________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151294,
+      "canvasData": {
+        "x": 6500,
+        "y": 1560,
+        "naturalSize": {
+          "width": 2520,
+          "height": 1417
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-gongjiao-gallery-_________________________.jpg"
+      }
+    },
+    {
+      "id": "image-055",
+      "title": "member-gongjiao-gallery-______________________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151295,
+      "canvasData": {
+        "x": 6820,
+        "y": 1560,
+        "naturalSize": {
+          "width": 1279,
+          "height": 1734
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-gongjiao-gallery-______________________.jpg"
+      }
+    },
+    {
+      "id": "image-056",
+      "title": "member-gongjiao-honors-__________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151296,
+      "canvasData": {
+        "x": 7140,
+        "y": 1560,
+        "naturalSize": {
+          "width": 2000,
+          "height": 1500
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-gongjiao-honors-__________.png"
+      }
+    },
+    {
+      "id": "image-057",
+      "title": "member-gongjiao-honors-________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151297,
+      "canvasData": {
+        "x": 7460,
+        "y": 1560,
+        "naturalSize": {
+          "width": 1813,
+          "height": 1197
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-gongjiao-honors-________.png"
+      }
+    },
+    {
+      "id": "image-058",
+      "title": "member-gongjiao-logo-__________________LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151298,
+      "canvasData": {
+        "x": 6500,
+        "y": 1820,
+        "naturalSize": {
+          "width": 640,
+          "height": 640
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-gongjiao-logo-__________________LOGO.jpg"
+      }
+    },
+    {
+      "id": "image-059",
+      "title": "member-hantang-gallery-7be48f25991e6dab944f88b8220b8825",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151299,
+      "canvasData": {
+        "x": 6820,
+        "y": 1820,
+        "naturalSize": {
+          "width": 1125,
+          "height": 1428
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hantang-gallery-7be48f25991e6dab944f88b8220b8825.jpg"
+      }
+    },
+    {
+      "id": "image-060",
+      "title": "member-hantang-logo-_____2025-12-17_115838_861",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151300,
+      "canvasData": {
+        "x": 7140,
+        "y": 1820,
+        "naturalSize": {
+          "width": 542,
+          "height": 542
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hantang-logo-_____2025-12-17_115838_861.jpg"
+      }
+    },
+    {
+      "id": "image-061",
+      "title": "member-hantang-logo-____LOGO",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151301,
+      "canvasData": {
+        "x": 7460,
+        "y": 1820,
+        "naturalSize": {
+          "width": 977,
+          "height": 239
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hantang-logo-____LOGO.png"
+      }
+    },
+    {
+      "id": "image-062",
+      "title": "member-hengrui-logo-__logo__",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151302,
+      "canvasData": {
+        "x": 6500,
+        "y": 2080,
+        "naturalSize": {
+          "width": 591,
+          "height": 592
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hengrui-logo-__logo__.jpg"
+      }
+    },
+    {
+      "id": "image-063",
+      "title": "member-hengrui-logo-__logo___1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151303,
+      "canvasData": {
+        "x": 6820,
+        "y": 2080,
+        "naturalSize": {
+          "width": 592,
+          "height": 592
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hengrui-logo-__logo___1.jpg"
+      }
+    },
+    {
+      "id": "image-064",
+      "title": "member-hongyi-gallery-________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151304,
+      "canvasData": {
+        "x": 7140,
+        "y": 2080,
+        "naturalSize": {
+          "width": 1724,
+          "height": 960
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hongyi-gallery-________.jpg"
+      }
+    },
+    {
+      "id": "image-065",
+      "title": "member-hongyi-logo-__-logo-__-1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151305,
+      "canvasData": {
+        "x": 7460,
+        "y": 2080,
+        "naturalSize": {
+          "width": 839,
+          "height": 839
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hongyi-logo-__-logo-__-1.png"
+      }
+    },
+    {
+      "id": "image-066",
+      "title": "member-hongyi-logo-__-logo-__-2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151306,
+      "canvasData": {
+        "x": 6500,
+        "y": 2340,
+        "naturalSize": {
+          "width": 839,
+          "height": 839
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-hongyi-logo-__-logo-__-2.png"
+      }
+    },
+    {
+      "id": "image-067",
+      "title": "member-jinqiao-gallery-1746783527419",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151307,
+      "canvasData": {
+        "x": 6820,
+        "y": 2340,
+        "naturalSize": {
+          "width": 1080,
+          "height": 810
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-1746783527419.png"
+      }
+    },
+    {
+      "id": "image-068",
+      "title": "member-jinqiao-gallery-1746783540135",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151308,
+      "canvasData": {
+        "x": 7140,
+        "y": 2340,
+        "naturalSize": {
+          "width": 1080,
+          "height": 810
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-1746783540135.png"
+      }
+    },
+    {
+      "id": "image-069",
+      "title": "member-jinqiao-gallery-1748078877917__1_",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151309,
+      "canvasData": {
+        "x": 7460,
+        "y": 2340,
+        "naturalSize": {
+          "width": 1080,
+          "height": 810
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-1748078877917__1_.png"
+      }
+    },
+    {
+      "id": "image-070",
+      "title": "member-jinqiao-gallery-1748078884914__1_",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151310,
+      "canvasData": {
+        "x": 6500,
+        "y": 2600,
+        "naturalSize": {
+          "width": 1080,
+          "height": 810
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-1748078884914__1_.png"
+      }
+    },
+    {
+      "id": "image-071",
+      "title": "member-jinqiao-gallery-73058c1b6cb3a7e96a17be837d3ff8c8",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151311,
+      "canvasData": {
+        "x": 6820,
+        "y": 2600,
+        "naturalSize": {
+          "width": 1080,
+          "height": 720
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-73058c1b6cb3a7e96a17be837d3ff8c8.png"
+      }
+    },
+    {
+      "id": "image-072",
+      "title": "member-jinqiao-gallery-98dd0c68e58962e76bc19e70911f6701",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151312,
+      "canvasData": {
+        "x": 7140,
+        "y": 2600,
+        "naturalSize": {
+          "width": 792,
+          "height": 515
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-gallery-98dd0c68e58962e76bc19e70911f6701.png"
+      }
+    },
+    {
+      "id": "image-073",
+      "title": "member-jinqiao-logo-____________logo",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151313,
+      "canvasData": {
+        "x": 7460,
+        "y": 2600,
+        "naturalSize": {
+          "width": 438,
+          "height": 438
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-jinqiao-logo-____________logo.png"
+      }
+    },
+    {
+      "id": "image-074",
+      "title": "member-longxing-gallery-___________-2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151314,
+      "canvasData": {
+        "x": 6500,
+        "y": 2860,
+        "naturalSize": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-___________-2.jpg"
+      }
+    },
+    {
+      "id": "image-075",
+      "title": "member-longxing-gallery-___________-map",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151315,
+      "canvasData": {
+        "x": 6820,
+        "y": 2860,
+        "naturalSize": {
+          "width": 819,
+          "height": 669
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-___________-map.png"
+      }
+    },
+    {
+      "id": "image-076",
+      "title": "member-longxing-gallery-___________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151316,
+      "canvasData": {
+        "x": 7140,
+        "y": 2860,
+        "naturalSize": {
+          "width": 1920,
+          "height": 843
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-___________.jpg"
+      }
+    },
+    {
+      "id": "image-077",
+      "title": "member-longxing-gallery-__217_________",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151317,
+      "canvasData": {
+        "x": 7460,
+        "y": 2860,
+        "naturalSize": {
+          "width": 3072,
+          "height": 2638
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-__217_________.jpg"
+      }
+    },
+    {
+      "id": "image-078",
+      "title": "member-longxing-gallery-_____",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151318,
+      "canvasData": {
+        "x": 6500,
+        "y": 3120,
+        "naturalSize": {
+          "width": 4096,
+          "height": 3072
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-_____.jpg"
+      }
+    },
+    {
+      "id": "image-079",
+      "title": "member-longxing-gallery-_____2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151319,
+      "canvasData": {
+        "x": 6820,
+        "y": 3120,
+        "naturalSize": {
+          "width": 3275,
+          "height": 2063
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-_____2.jpg"
+      }
+    },
+    {
+      "id": "image-080",
+      "title": "member-longxing-gallery-__1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151320,
+      "canvasData": {
+        "x": 7140,
+        "y": 3120,
+        "naturalSize": {
+          "width": 1080,
+          "height": 1476
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-__1.jpg"
+      }
+    },
+    {
+      "id": "image-081",
+      "title": "member-longxing-gallery-__2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151321,
+      "canvasData": {
+        "x": 7460,
+        "y": 3120,
+        "naturalSize": {
+          "width": 1260,
+          "height": 2184
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-__2.jpg"
+      }
+    },
+    {
+      "id": "image-082",
+      "title": "member-longxing-gallery-__3",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151322,
+      "canvasData": {
+        "x": 6500,
+        "y": 3380,
+        "naturalSize": {
+          "width": 3072,
+          "height": 4096
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-__3.jpg"
+      }
+    },
+    {
+      "id": "image-083",
+      "title": "member-longxing-gallery-__4",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151323,
+      "canvasData": {
+        "x": 6820,
+        "y": 3380,
+        "naturalSize": {
+          "width": 3072,
+          "height": 4096
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-gallery-__4.jpg"
+      }
+    },
+    {
+      "id": "image-084",
+      "title": "member-longxing-logo-______-logo-04",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151324,
+      "canvasData": {
+        "x": 7140,
+        "y": 3380,
+        "naturalSize": {
+          "width": 355,
+          "height": 355
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-longxing-logo-______-logo-04.png"
+      }
+    },
+    {
+      "id": "image-085",
+      "title": "member-shengli-gallery-_____20260928145028_65_732",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151325,
+      "canvasData": {
+        "x": 7460,
+        "y": 3380,
+        "naturalSize": {
+          "width": 3623,
+          "height": 941
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shengli-gallery-_____20260928145028_65_732.jpg"
+      }
+    },
+    {
+      "id": "image-086",
+      "title": "member-shengli-gallery-_____20260928162757_72_732",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151326,
+      "canvasData": {
+        "x": 6500,
+        "y": 3640,
+        "naturalSize": {
+          "width": 3834,
+          "height": 1772
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shengli-gallery-_____20260928162757_72_732.jpg"
+      }
+    },
+    {
+      "id": "image-087",
+      "title": "member-shunze-gallery-____1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151327,
+      "canvasData": {
+        "x": 6820,
+        "y": 3640,
+        "naturalSize": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze-gallery-____1.jpg"
+      }
+    },
+    {
+      "id": "image-088",
+      "title": "member-shunze-gallery-____2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151328,
+      "canvasData": {
+        "x": 7140,
+        "y": 3640,
+        "naturalSize": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze-gallery-____2.jpg"
+      }
+    },
+    {
+      "id": "image-089",
+      "title": "member-shunze-gallery-____3",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151329,
+      "canvasData": {
+        "x": 7460,
+        "y": 3640,
+        "naturalSize": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze-gallery-____3.jpg"
+      }
+    },
+    {
+      "id": "image-090",
+      "title": "member-shunze-logo-__logo1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151330,
+      "canvasData": {
+        "x": 6500,
+        "y": 3900,
+        "naturalSize": {
+          "width": 1280,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze-logo-__logo1.png"
+      }
+    },
+    {
+      "id": "image-091",
+      "title": "member-shunze-logo-__logo2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792651151331,
+      "canvasData": {
+        "x": 6820,
+        "y": 3900,
+        "naturalSize": {
+          "width": 1280,
+          "height": 1279
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-shunze-logo-__logo2.png"
+      }
+    },
+    {
+      "id": "page-member-detail-fenzhong-xin-cainiao",
+      "title": "会员详情 · 分众传媒潍坊分公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331487,
+      "canvasData": {
+        "x": 6512,
+        "y": 0,
+        "group": 1,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1795,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-9aca8b30",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-fenzhong-xin-cainiao.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-baier",
+      "title": "会员详情 · 山东拜尔文化科技有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331488,
+      "canvasData": {
+        "x": 8032,
+        "y": 0,
+        "group": 1,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1764,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-247236f3",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-baier.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-daoersen",
+      "title": "会员详情 · 山东道尔森传媒服务有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331489,
+      "canvasData": {
+        "x": 9552,
+        "y": 0,
+        "group": 1,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 5054,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-9c2fee94",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-daoersen.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-jinqiao",
+      "title": "会员详情 · 山东金桥广告装饰有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331490,
+      "canvasData": {
+        "x": 11072,
+        "y": 0,
+        "group": 1,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1874,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-2287a099",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-jinqiao.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-longxing",
+      "title": "会员详情 · 山东龙行十万传媒有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331491,
+      "canvasData": {
+        "x": 6512,
+        "y": 3800,
+        "group": 2,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2164,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-459ecf33",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-longxing.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-hongyi",
+      "title": "会员详情 · 弘易",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331492,
+      "canvasData": {
+        "x": 8032,
+        "y": 3800,
+        "group": 2,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2098,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-10e9e263",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-hongyi.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-hengrui",
+      "title": "会员详情 · 恒瑞文化",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331493,
+      "canvasData": {
+        "x": 9552,
+        "y": 3800,
+        "group": 2,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1795,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-82e34b0f",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-hengrui.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-shengli",
+      "title": "会员详情 · 晟利",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331494,
+      "canvasData": {
+        "x": 11072,
+        "y": 3800,
+        "group": 2,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1668,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-286f6ccd",
+          "measuredAt": 1792736984081
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-shengli.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-xin-ao",
+      "title": "会员详情 · 欣澳",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331495,
+      "canvasData": {
+        "x": 6512,
+        "y": 7600,
+        "group": 3,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2473,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-190f4092",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-xin-ao.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-hantang",
+      "title": "会员详情 · 汉唐",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331496,
+      "canvasData": {
+        "x": 8032,
+        "y": 7600,
+        "group": 3,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1922,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-e1c4e09c",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-hantang.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-gongjiao",
+      "title": "会员详情 · 潍坊市公共交通集团有限公司广告分公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331498,
+      "canvasData": {
+        "x": 9552,
+        "y": 7600,
+        "group": 3,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2104,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-041923c6",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-gongjiao.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-shunze",
+      "title": "会员详情 · 潍坊顺泽信息科技有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734331499,
+      "canvasData": {
+        "x": 11072,
+        "y": 7600,
+        "group": 3,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1843,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-530febe4",
+          "measuredAt": 1792736984081
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-shunze.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail",
+      "title": "会员详情（通用模板）",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792734365233,
+      "canvasData": {
+        "x": 12592,
+        "y": 0,
+        "group": 4,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 3400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-template",
+          "measuredAt": 1792734365233
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-member-detail-zhishang",
+      "title": "会员详情 · 山东至上品牌管理有限公司",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792736678135,
+      "canvasData": {
+        "x": 4896,
+        "y": 552,
+        "group": 4,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1795,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-1392357b",
+          "measuredAt": 1792754533832
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/member-detail-zhishang.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-092",
+      "title": "至上品牌 · Logo",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234286,
+      "canvasData": {
+        "x": 12592,
+        "y": 15000,
+        "naturalSize": {
+          "width": 4001,
+          "height": 2250
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-logo.png"
+      }
+    },
+    {
+      "id": "image-093",
+      "title": "至上品牌 · Gallery 1",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234287,
+      "canvasData": {
+        "x": 12952,
+        "y": 15000,
+        "naturalSize": {
+          "width": 640,
+          "height": 640
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-1.png"
+      }
+    },
+    {
+      "id": "image-094",
+      "title": "至上品牌 · Gallery 2",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234288,
+      "canvasData": {
+        "x": 13312,
+        "y": 15000,
+        "naturalSize": {
+          "width": 2084,
+          "height": 2084
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-2.png"
+      }
+    },
+    {
+      "id": "image-095",
+      "title": "至上品牌 · Gallery 3",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234289,
+      "canvasData": {
+        "x": 13672,
+        "y": 15000,
+        "naturalSize": {
+          "width": 751,
+          "height": 393
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-3.png"
+      }
+    },
+    {
+      "id": "image-096",
+      "title": "至上品牌 · Gallery 4",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234290,
+      "canvasData": {
+        "x": 14032,
+        "y": 15000,
+        "naturalSize": {
+          "width": 640,
+          "height": 235
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-4.png"
+      }
+    },
+    {
+      "id": "image-097",
+      "title": "至上品牌 · Gallery 5",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234291,
+      "canvasData": {
+        "x": 12592,
+        "y": 15320,
+        "naturalSize": {
+          "width": 2002,
+          "height": 1126
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-5.jpeg"
+      }
+    },
+    {
+      "id": "image-098",
+      "title": "至上品牌 · Gallery 6",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234292,
+      "canvasData": {
+        "x": 12952,
+        "y": 15320,
+        "naturalSize": {
+          "width": 1173,
+          "height": 555
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-6.png"
+      }
+    },
+    {
+      "id": "image-099",
+      "title": "至上品牌 · Gallery 7",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234293,
+      "canvasData": {
+        "x": 13312,
+        "y": 15320,
+        "naturalSize": {
+          "width": 1103,
+          "height": 401
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-7.png"
+      }
+    },
+    {
+      "id": "image-100",
+      "title": "至上品牌 · Gallery 8",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234294,
+      "canvasData": {
+        "x": 13672,
+        "y": 15320,
+        "naturalSize": {
+          "width": 1164,
+          "height": 523
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-8.png"
+      }
+    },
+    {
+      "id": "image-101",
+      "title": "至上品牌 · Gallery 9",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234295,
+      "canvasData": {
+        "x": 14032,
+        "y": 15320,
+        "naturalSize": {
+          "width": 912,
+          "height": 539
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-9.png"
+      }
+    },
+    {
+      "id": "image-102",
+      "title": "至上品牌 · Gallery 10",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234296,
+      "canvasData": {
+        "x": 12592,
+        "y": 15640,
+        "naturalSize": {
+          "width": 3428,
+          "height": 1717
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-10.jpeg"
+      }
+    },
+    {
+      "id": "image-103",
+      "title": "至上品牌 · Gallery 11",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234297,
+      "canvasData": {
+        "x": 12952,
+        "y": 15640,
+        "naturalSize": {
+          "width": 4032,
+          "height": 3024
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-11.jpeg"
+      }
+    },
+    {
+      "id": "image-104",
+      "title": "至上品牌 · Gallery 12",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1792738234298,
+      "canvasData": {
+        "x": 13312,
+        "y": 15640,
+        "naturalSize": {
+          "width": 734,
+          "height": 664
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/member-zhishang-gallery-12.png"
+      }
+    },
+    {
+      "id": "page-media-detail-led-screen",
+      "title": "媒体详情 · LED大屏",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705872,
+      "canvasData": {
+        "x": 36,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-led-screen",
+          "measuredAt": 1792754705872
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-led-screen.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-highway-pillar",
+      "title": "媒体详情 · 高速单立柱",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705873,
+      "canvasData": {
+        "x": 1556,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-highway-pillar",
+          "measuredAt": 1792754705873
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-highway-pillar.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-rooftop-billboard",
+      "title": "媒体详情 · 楼顶大牌",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705874,
+      "canvasData": {
+        "x": 3076,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-rooftop-billboard",
+          "measuredAt": 1792754705874
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-rooftop-billboard.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-overpass-bridge",
+      "title": "媒体详情 · 跨线桥广告",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705875,
+      "canvasData": {
+        "x": 4596,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-overpass-bridge",
+          "measuredAt": 1792754705875
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-overpass-bridge.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-elevator-poster",
+      "title": "媒体详情 · 电梯海报",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705876,
+      "canvasData": {
+        "x": 6116,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-elevator-poster",
+          "measuredAt": 1792754705876
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-elevator-poster.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-elevator-tv",
+      "title": "媒体详情 · 电梯电视",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705877,
+      "canvasData": {
+        "x": 7636,
+        "y": 11400,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-elevator-tv",
+          "measuredAt": 1792754705877
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-elevator-tv.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-smart-screen",
+      "title": "媒体详情 · 智能屏",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705878,
+      "canvasData": {
+        "x": 36,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-smart-screen",
+          "measuredAt": 1792754705878
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-smart-screen.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-bus-body",
+      "title": "媒体详情 · 公交车身",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705879,
+      "canvasData": {
+        "x": 1556,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-bus-body",
+          "measuredAt": 1792754705879
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-bus-body.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-bus-shelter",
+      "title": "媒体详情 · 公交候车亭",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705880,
+      "canvasData": {
+        "x": 3076,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-bus-shelter",
+          "measuredAt": 1792754705880
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-bus-shelter.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-taxi-top",
+      "title": "媒体详情 · 出租车顶灯屏",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705881,
+      "canvasData": {
+        "x": 4596,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-taxi-top",
+          "measuredAt": 1792754705881
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-taxi-top.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-hsr-lightbox",
+      "title": "媒体详情 · 高铁站灯箱",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705882,
+      "canvasData": {
+        "x": 6116,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-hsr-lightbox",
+          "measuredAt": 1792754705882
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-hsr-lightbox.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-community-barrier",
+      "title": "媒体详情 · 小区道闸",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705883,
+      "canvasData": {
+        "x": 7636,
+        "y": 15200,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-community-barrier",
+          "measuredAt": 1792754705883
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-community-barrier.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-access-control",
+      "title": "媒体详情 · 门禁广告",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705884,
+      "canvasData": {
+        "x": 36,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-access-control",
+          "measuredAt": 1792754705884
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-access-control.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-parcel-locker",
+      "title": "媒体详情 · 快递柜屏",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705885,
+      "canvasData": {
+        "x": 1556,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-parcel-locker",
+          "measuredAt": 1792754705885
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-parcel-locker.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-cinema-pre-roll",
+      "title": "媒体详情 · 影院映前",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705886,
+      "canvasData": {
+        "x": 3076,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-cinema-pre-roll",
+          "measuredAt": 1792754705886
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-cinema-pre-roll.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-gym",
+      "title": "媒体详情 · 健身房",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705887,
+      "canvasData": {
+        "x": 4596,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-gym",
+          "measuredAt": 1792754705887
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-gym.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-restaurant-sticker",
+      "title": "媒体详情 · 餐饮桌贴",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705888,
+      "canvasData": {
+        "x": 6116,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-restaurant-sticker",
+          "measuredAt": 1792754705888
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-restaurant-sticker.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-media-detail-pharmacy-lightbox",
+      "title": "媒体详情 · 药店医院灯箱",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1792754705889,
+      "canvasData": {
+        "x": 7636,
+        "y": 19000,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 2400,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-pharmacy-lightbox",
+          "measuredAt": 1792754705889
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/media-detail-pharmacy-lightbox.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "transitionLabel": "首页",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-about",
+            "targetPageId": "page-about-new",
+            "transitionLabel": "关于协会",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-news",
+            "targetPageId": "page-news",
+            "transitionLabel": "协会动态",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-policy",
+            "targetPageId": "page-policy",
+            "transitionLabel": "政策法规",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-service",
+            "targetPageId": "page-service",
+            "transitionLabel": "会员服务",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-member",
+            "targetPageId": "page-members",
+            "transitionLabel": "会员风采",
+            "hideEdge": false
+          },
+          {
+            "domId": "nav-media",
+            "targetPageId": "page-media",
+            "transitionLabel": "潍广通",
+            "hideEdge": false
+          },
+          {
+            "domId": "footer-contact",
+            "targetPageId": "page-contact",
+            "transitionLabel": "联系我们",
+            "hideEdge": false
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": false,
+    "deviceType": "desktop",
+    "projectName": "潍坊市广告协会官网",
+    "visualEditorEnabled": true,
+    "showEdge": true
+  }
+}

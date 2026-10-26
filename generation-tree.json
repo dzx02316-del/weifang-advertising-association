@@ -1,0 +1,47 @@
+{
+  "root": {
+    "nodeId": "gen-project-shell",
+    "kind": "project-shell",
+    "pageIds": ["page-index", "page-news", "page-media"],
+    "output": "partials/project-shell.html",
+    "sharedRegions": ["site-header", "primary-nav", "site-footer", "friendly-links"],
+    "privateRegions": [],
+    "mutableSlots": ["activeNavItem", "pageMainContent"],
+    "status": "generated",
+    "children": [
+      {
+        "nodeId": "gen-page-index",
+        "kind": "page-leaf",
+        "pageIds": ["page-index"],
+        "output": "pages/index.html",
+        "sharedRegions": [],
+        "privateRegions": ["hero", "stats-band", "news-preview", "media-preview", "member-showcase", "friendly-links-section"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-news",
+        "kind": "page-leaf",
+        "pageIds": ["page-news"],
+        "output": "pages/news.html",
+        "sharedRegions": [],
+        "privateRegions": ["page-banner", "news-tabs", "news-list", "pagination", "sidebar"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-media",
+        "kind": "page-leaf",
+        "pageIds": ["page-media"],
+        "output": "pages/media.html",
+        "sharedRegions": [],
+        "privateRegions": ["page-banner", "search-filter", "media-category-outdoor", "media-category-elevator", "media-category-transit", "media-category-community", "media-category-scene", "cta-band"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      }
+    ]
+  }
+}

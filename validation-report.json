@@ -1,0 +1,551 @@
+{
+  "success": true,
+  "outcome": "passed",
+  "repairable": true,
+  "terminalViolations": [],
+  "terminalBlockingSummary": null,
+  "skillProvenance": {
+    "name": "solo-design",
+    "version": null,
+    "version_source": "unknown",
+    "runtime_skill_dir": null,
+    "recorded_at": null,
+    "expected_version": "2026.10.13.09.48.16",
+    "status": "observed_unknown",
+    "read_status": "unknown"
+  },
+  "operatingMode": "free-explore",
+  "renderBlockingErrorCount": 0,
+  "softWarningCount": 23,
+  "renderBlockingErrors": [],
+  "errorSignatures": [],
+  "softWarnings": [
+    "[orchestration-summary] runtime-orchestration-summary.json is missing skillProvenance.name/version/version_source. Version provenance will be reported as observed_unknown by external evaluators.",
+    "[html-quality] about-new.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] contact.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] index.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] media.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-baier.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-daoersen.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-fenzhong-xin-cainiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-gongjiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hantang.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hengrui.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hongyi.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-jinqiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-longxing.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-shengli.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-shunze.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-xin-ao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-zhishang.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] members.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] news.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] policy.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] service.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference."
+  ],
+  "repairPlanHints": [
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "about-new.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "contact.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "index.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "media.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-baier.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-daoersen.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-fenzhong-xin-cainiao.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-gongjiao.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-hantang.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-hengrui.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-hongyi.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-jinqiao.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-longxing.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-shengli.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-shunze.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-xin-ao.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail-zhishang.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "member-detail.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "members.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "news.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "policy.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    },
+    {
+      "errorClass": "hardcoded-color-in-body",
+      "owner": "sub-agent",
+      "repairScope": "targeted-token-replace",
+      "strategy": "targeted_token_replace_once",
+      "affectedFiles": [
+        "service.html"
+      ],
+      "repairReportPath": null,
+      "repairAlreadyAttempted": false,
+      "allowSourceRead": "no-full-html-read",
+      "maxValidationRuns": 2
+    }
+  ],
+  "repairActionTable": [],
+  "errorCount": 0,
+  "warningCount": 23,
+  "errors": [],
+  "warnings": [
+    "[orchestration-summary] runtime-orchestration-summary.json is missing skillProvenance.name/version/version_source. Version provenance will be reported as observed_unknown by external evaluators.",
+    "[html-quality] about-new.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] contact.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] index.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] media.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-baier.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-daoersen.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-fenzhong-xin-cainiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-gongjiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hantang.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hengrui.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-hongyi.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-jinqiao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-longxing.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-shengli.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-shunze.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-xin-ao.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail-zhishang.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] member-detail.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] members.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] news.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] policy.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference.",
+    "[html-quality] service.html: hardcoded colors are forbidden outside <style id=\"theme-vars\">. Use brand CSS variables from the token reference."
+  ],
+  "validationRunDisciplineStatus": {
+    "declared": true,
+    "restoreMode": false,
+    "maxFullValidationRuns": 2,
+    "validationHistoryCount": 0,
+    "repairLedgerCount": 0,
+    "softWarningsTriggerRepair": false,
+    "terminalState": null,
+    "nextAction": null,
+    "violations": [],
+    "success": true
+  },
+  "terminalState": null,
+  "nextCheck": {
+    "type": "finish-readiness",
+    "command": "node '/data/user/plugins/trae-remote-official/trae-design/0.1.3/skills/solo-design/shared-runtime/deterministic-tooling/validate-finish-readiness.mjs' '/workspace/weifang-advertising-association' --check=all",
+    "fullValidationAllowed": false,
+    "reason": "workspace validation passed; run complete finish readiness before final delivery"
+  },
+  "repairBatch": [],
+  "repairContextPacket": {
+    "schema_version": "1.0",
+    "purpose": "small-context repair packet; read this before full validation-report.json",
+    "success": true,
+    "terminalState": null,
+    "skillProvenance": {
+      "name": "solo-design",
+      "version": null,
+      "version_source": "unknown",
+      "runtime_skill_dir": null,
+      "recorded_at": null,
+      "expected_version": "2026.10.13.09.48.16",
+      "status": "observed_unknown",
+      "read_status": "unknown"
+    },
+    "renderBlockingErrorCount": 0,
+    "softWarningCount": 23,
+    "renderBlockingErrors": [],
+    "repairActionTable": [],
+    "nextCheck": {
+      "type": "finish-readiness",
+      "command": "node '/data/user/plugins/trae-remote-official/trae-design/0.1.3/skills/solo-design/shared-runtime/deterministic-tooling/validate-finish-readiness.mjs' '/workspace/weifang-advertising-association' --check=all",
+      "fullValidationAllowed": false,
+      "reason": "workspace validation passed; run complete finish readiness before final delivery"
+    },
+    "forbidden": [
+      "do not read validator source",
+      "do not rerun full validation when nextCheck.fullValidationAllowed=false",
+      "do not start preview/browser unless user explicitly asks",
+      "do not hand-edit repair ledger fields"
+    ]
+  },
+  "projectFileHashes": {
+    "weifang-advertising-association.design": "b084857fbbc0c1c0e59030d2217969d38fb4d80e0a6280f75cf2d79fec2cb871",
+    "colors_and_type.css": "d8da3eaba1748d9a63219e005b50eda63cd32a5fdf975b4d6da5c5ef1fbf50df",
+    "runtime-orchestration-summary.json": "fd6545b50c7cafae39bc978f29ee7a61584dc730cfd873f718ee2aab67cbf238",
+    "pages/about-new.html": "6e23829aeebc840d62a0c659aec9d06c8d75d6d5246f018ed29c7646a15b9c85",
+    "pages/contact.html": "75c1669b258e30a17a9d3dfd9408203d93eac36a3e2f9e6793a206ee1048b832",
+    "pages/index.html": "2fc49d6967a8d894162083cfb942c07f4c76385855f4821b01b109ae1b725f2e",
+    "pages/media.html": "38b8c77ce39af53ce27ddb1d9cae12696daa62bb5bbac12f9718b9e2cdc30224",
+    "pages/member-detail-baier.html": "4603d9abef8f7e050a3a10d44f2bd243350119f16c72c1dd40a6991d16564d1c",
+    "pages/member-detail-daoersen.html": "11c0b6fbd7e5c53853c706de97e8f8c55f2e685d5cc07bb5fe2e5afdab77c449",
+    "pages/member-detail-fenzhong-xin-cainiao.html": "200f7a52228db13c14abc2cdf061983f797ad2204fe1e37f7478b1300a144a5a",
+    "pages/member-detail-gongjiao.html": "e921989a055ff1b05d4d213baeb59f4db19fc1faee68e187ff060ac70a3d7d10",
+    "pages/member-detail-hantang.html": "0e652c2672e12d6f28b53463f0e809d2394edb55f93a80788bfea5166a424769",
+    "pages/member-detail-hengrui.html": "20273227dfd7b4b9f24445c05a04a7613c12f7b98d1d5740a16ba6aa840a2099",
+    "pages/member-detail-hongyi.html": "81a1c5f70549f68eda3a58b100b49f2e485ffcd7a7517b9afc62c704e8040082",
+    "pages/member-detail-jinqiao.html": "334702c54b5a5cb1feb9c10799be47b3bc60e02617403898bc76ccad9d9e14bc",
+    "pages/member-detail-longxing.html": "10e4737ecdb52a5c6fa2df38246146f49ff7007b8afd2b122d7b65ce41f5d126",
+    "pages/member-detail-shengli.html": "26d23ee815b4e7f6bbb20881e1b2444e8caf80bfa6b1d095ffdbadb34a47846b",
+    "pages/member-detail-shunze.html": "73a8ff59b5f12d978767973ea60cb5cace8cf7a14696a9dddd4006b5a56c46ac",
+    "pages/member-detail-xin-ao.html": "6ee4e36a567b20eaa39d3928d7eca0ae12962bbac80f0f0b5a24e7f74db26af8",
+    "pages/member-detail-zhishang.html": "2ccd49d2cfe67ed2a4fa9dbcf00bcb85ccb292b0870817050157955a603c1193",
+    "pages/member-detail.html": "bb136c9e46dea779b94ab60871dfba4aabbdc1ebd82ea3e31acb6030b0173c87",
+    "pages/members.html": "8b6a6db499f7ea5c3560d880d6934b7e8506b6c774c89a53e28ea5fd8cfba733",
+    "pages/news.html": "551714756cc828b8634f9857725027d2311b87c912d830ae42aff8e24b570f04",
+    "pages/policy.html": "380d60af2aea45dcc4b0aa6f50dfc9ffe5530f0aa385f2600c16f3e3e8288d26",
+    "pages/service.html": "38530fc0f4fb31cde87e644cee71da070b9968a0cbc9e4a03f1c5c5f082cc90a",
+    "assets/bg-cta-city.gif": "ee83a58657fc1a42b55b1199fe9878d1fd676c3f27b4978fd93fe973ffd55082",
+    "assets/bg-cta-city.jpg": "93848475c98dbb1c269b1f61c3d524a93740319d95e5d8520e171e7b22ace8a2",
+    "assets/bg-media-abstract.gif": "af7cf3029f28c114eb9efffa935685e43ac2d66571370c6b521a83269aaba241",
+    "assets/bg-media-abstract.jpg": "63fe65cadf9c1d7e3ff5875a962a820e3e15712a07b3661772ede04a1e0b0b07",
+    "assets/bg-member.gif": "2034b21cd13ae490e2f2c48908213e2bfc8fa422d05e61ec17462922962a4d28",
+    "assets/bg-member.jpg": "e8fa465f8038826f6905e8d078ebde22179e76953ffca9fd3340e83e15512b5b",
+    "assets/bg-news-banner.gif": "8e9c536d402aac2d28796325b4747d2fef2ac50070bd0610554d9dada0eef929",
+    "assets/bg-news-banner.jpg": "059e5e0dca44f39989a2ee718f8401c082c17b6610fccdca2557556dc37a3ca7",
+    "assets/hero-city.gif": "38a34ff82b13d8ca35cf0c1b0a5e285576eb4f665158676d9402d85c9a496aa4",
+    "assets/hero-city.jpg": "2cfc4172ba729d149a8829d31e42fa4fc387b8ecdb15262c5aeb7b6db87c5189",
+    "assets/logo-white.png": "31e0d56a5627415bfdb6f9a6827c184f22156d96bf10ba5e9f9c7e092359389a",
+    "assets/logo.png": "4ccee2d9948e91c205942bbe86e2dd4f4478f5987ecf748cfdedfd37e289ed69",
+    "assets/media-community.jpg": "209505bd95b1a6ee8ffc4fe25cd191fb80c394bbe53b89464d04f8875de439b3",
+    "assets/media-elevator.jpg": "0cc39d84d42597e1c6ef0da9c8c888addfdc7d59814a97ad9cf8e9c823bfb741",
+    "assets/media-outdoor.jpg": "8093791bbc564ba65cc30f786359cd378c06b82ac8e912d11ecc88d8e64545cf",
+    "assets/media-scene.jpg": "7d5d5b6e9efaff814cbc41acba0cbec9c00534c5d0d6cdf4a6f3dabcaee34e0e",
+    "assets/media-transit.jpg": "d2df60d603a6db5fe0161e52f4cd355ca9894cb3bbe93cbd44a9b06648d410c1",
+    "assets/member-baer.png": "fd02cdd5ab39a46a2fb15ac1158b3b8c08716c03d39bc786cef0a16a306e1cd9",
+    "assets/member-baier-gallery-1.jpg": "a40429ddda61f26f57558dd349e03f4f9d903bfd6faa478089ac2e5371febc99",
+    "assets/member-baier-gallery-2.jpg": "0033f887e587d94f98f34c0dabfbe4f055adb9a8ab235cf293ae9da5122c0f87",
+    "assets/member-baier-gallery-3.jpg": "3b6e55667edd7a3913825eb5ae4e7ad90e2f6dc3fbccac0f9d1e2966f2adad8b",
+    "assets/member-baier-gallery-4.jpg": "6fd8fa24bea9a6c8529ec95e37595c7617991ed78072e5c6f5204f5d93a0c358",
+    "assets/member-baier-gallery-5.jpg": "0a8ad5f6b0526ba4f056940d8b054d8c384525e468a1901209de6f5e0026d7b6",
+    "assets/member-baier-gallery-6.jpg": "73365a316a37dfec2e1567cb4a7c2c5a3b81c4e2a2dc3ffdce808e8a9cca974c",
+    "assets/member-baier-logo-1b9d4f3971c467fc5708e489bcff1544.png": "fd02cdd5ab39a46a2fb15ac1158b3b8c08716c03d39bc786cef0a16a306e1cd9",
+    "assets/member-bus.jpg": "946c5dfafae50563b2566a1c71f22372447e948aed36888b41e1610a0b1068af",
+    "assets/member-fenzhong-xin-cainiao-gallery-18b49dfb-90ea-486f-965c-6ea1c5bb6914.png": "a01e546f630929f23f5aa49a097c00cca8332f6fd7f5f15a34f7d64802bc4222",
+    "assets/member-fenzhong-xin-cainiao-gallery-1c79dc59-8f2b-403d-83c8-cf05ed374f91.png": "f5448ff9878e07676600836434fd3fcda6c56c2909b30b96925141424b10c2fb",
+    "assets/member-fenzhong-xin-cainiao-gallery-3140fe57-e123-4023-a743-5ae1ae0ebd5c.png": "26bc2d2d8033569dde5c72982f43a2e16c2575aee4f0f807fc56eda7501a2bbd",
+    "assets/member-fenzhong-xin-cainiao-gallery-320fbf7e-260a-4e19-aeca-63d83de2e18e.png": "61c6ddb3d9bbd03442d7aeea3c142ee869ca926eabfba038acf080cb7101bdc6",
+    "assets/member-fenzhong-xin-cainiao-gallery-4066d2e8-f27f-4536-a944-7f4cf5b2e7de.png": "dcc5985c6a83c3472f57ec5bce096fd9cf4e9da506383449cb6d92578e839035",
+    "assets/member-fenzhong-xin-cainiao-gallery-4a654248-be43-405e-b8bc-1ab2ac729c47.png": "f276c3ee22715db9fff1b9d9a46a3c82222f42009db7ecb7b328f6cd0eedaafd",
+    "assets/member-fenzhong-xin-cainiao-gallery-6aac7d06-4427-4153-99e8-bce57c9e5d66.png": "c244428accfcbe61f619547e0ca9cc0f785449e7482cc11765818e3b1e66edba",
+    "assets/member-fenzhong-xin-cainiao-gallery-70276652-c5a8-4333-8a04-b8b97c75dc7b.png": "6ddfaf433ed59045b3fd76951bf2f6c2646050313074460351707c3c07b702ab",
+    "assets/member-fenzhong-xin-cainiao-gallery-___5_______.png": "fd537f74e45760afc8bb323dc9e53502184e54b0ec4f5dd7c7d98119dcec81d7",
+    "assets/member-fenzhong-xin-cainiao-gallery-___9_______.png": "2a176d56e7b639c28fbe05651a42ae27b1d16c00333a022ab7df66ff59dbf059",
+    "assets/member-fenzhong-xin-cainiao-gallery-______LED_____.webp": "22226a06e9ec5aa3be76e440a65856d432ebfa0aac5ab01e70a8830049c0433e",
+    "assets/member-fenzhong-xin-cainiao-gallery-_______.png": "89dc914ecd1ff7e7d550ae69617b4e97b9f8866a08ef6a367343d60c796cbaa4",
+    "assets/member-fenzhong-xin-cainiao-gallery-________.png": "a6b8b79dd23b11d39b62e83977fd84f0b6536812965aec62792fb17e28b5af24",
+    "assets/member-fenzhong-xin-cainiao-gallery-_________1.png": "692cb84d901160223f571c52471dd7dbb703c95d6340914b66587b2beecd3b74",
+    "assets/member-fenzhong-xin-cainiao-gallery-_________2.png": "df78a819f85f2a991d89c628e18128e945cd9158f7fb7b7e169ae99a06ee8fca",
+    "assets/member-fenzhong-xin-cainiao-gallery-aa9d8b35-4531-4693-87d4-16a636eb3ab5.png": "b7be3afc9be6a8c7217706feaea9a0c401eb9cf3ff4891ae442b2e9724df2343",
+    "assets/member-fenzhong-xin-cainiao-gallery-c04a641b-246f-4dee-8098-f5f9e67fe4eb.png": "6e4a11cd864f9c34f6a47caedadc7fef2cb526665008282355eef04306a22b40",
+    "assets/member-gongjiao-gallery-______________________.jpg": "49d0e01c0d065c1ede71c1b8a89b19acce740f9b07089235693c518c2745b7f1",
+    "assets/member-gongjiao-gallery-_________________________.jpg": "25e002a98ab671701a19e74a391e5b5fe4ee39f8660fb7256aeda9b5b6a401d9",
+    "assets/member-gongjiao-honors-________.png": "8ddb3142fc52e92f1b8b2bf05d6a9d25550513e67dece632126e5187b678699d",
+    "assets/member-gongjiao-honors-__________.png": "1e154c43059ce06ad1984d3b33ec71589acc0e1b82d59aad9037b47f086c54c3",
+    "assets/member-gongjiao-logo-__________________LOGO.jpg": "946c5dfafae50563b2566a1c71f22372447e948aed36888b41e1610a0b1068af",
+    "assets/member-hantang-gallery-7be48f25991e6dab944f88b8220b8825.jpg": "f3f369807afab47a4eaa1f33f55a734c24a07ca130168c904ad98f41cce38f8d",
+    "assets/member-hantang-logo-____LOGO.png": "e57ce89b4989133df8c6f6f9aeaaa3512440aac621a7a81f63f073a82dc0cdc6",
+    "assets/member-hantang-logo-_____2025-12-17_115838_861.jpg": "b75c5b0e8ba720da8258824ca18b618707b4416b4f02b4b34d0ec5640b6c32d0",
+    "assets/member-hantang.png": "e57ce89b4989133df8c6f6f9aeaaa3512440aac621a7a81f63f073a82dc0cdc6",
+    "assets/member-hengrui-logo-__logo__.jpg": "9a424f3146f41a2858f603ea69a74aca27c43f49a39214306b5281dca943e198",
+    "assets/member-hengrui-logo-__logo___1.jpg": "54609ced5306a848d61638cfe2c578b0385c37f6ca48f9ec39306aa57a53f805",
+    "assets/member-hengrui.jpg": "9a424f3146f41a2858f603ea69a74aca27c43f49a39214306b5281dca943e198",
+    "assets/member-hongyi-gallery-________.jpg": "964e080d996f816fb6a5c9637e18d4b1823807e88192ad8c1f26f903069e4ead",
+    "assets/member-hongyi-logo-__-logo-__-1.png": "4ced40429da0a80bb3c944b56407ae12c30700750ea1d87ce6ad5b6673bf7796",
+    "assets/member-hongyi-logo-__-logo-__-2.png": "3c6b6b07de7ab9e1eeca6c191a7bf17f4a599c2ab9b6136be508fc2f85bd3cee",
+    "assets/member-hongyi.png": "4ced40429da0a80bb3c944b56407ae12c30700750ea1d87ce6ad5b6673bf7796",
+    "assets/member-jinqiao-gallery-1746783527419.png": "0b3d49c7026bae2796b9130b28b75f6f27f8698de3d605f03ae0be618e0954a6",
+    "assets/member-jinqiao-gallery-1746783540135.png": "a3f8b0b2def1fd3a1a4038c55b85188e0c696eea82d63b3aecb2a5bd58b4e475",
+    "assets/member-jinqiao-gallery-1748078877917__1_.png": "893954cd9a2413a4011f31e06c63cdddca528afa1250e00daf90a695854a7424",
+    "assets/member-jinqiao-gallery-1748078884914__1_.png": "5af6db531ac5dc0269fb4610575b70c8952e87dfaf2c7da97ce2eebfcfdd63cf",
+    "assets/member-jinqiao-gallery-73058c1b6cb3a7e96a17be837d3ff8c8.png": "76174efb3a1e2b6918d621431181c2f12f34891ad564184145ed1c484963d916",
+    "assets/member-jinqiao-gallery-98dd0c68e58962e76bc19e70911f6701.png": "657952d0f54dfcbfb7ec899c6e0bd00d3e076d11c7bb24585457cacb8f658040",
+    "assets/member-jinqiao-logo-____________logo.png": "31dbf3829cc383a3a0b2a80176ca7fabcdb61fe5cd04f23fdb487fbd84edf1d6",
+    "assets/member-jinqiao.png": "31dbf3829cc383a3a0b2a80176ca7fabcdb61fe5cd04f23fdb487fbd84edf1d6",
+    "assets/member-longxing-gallery-__1.jpg": "1794072b295f6e1801a4fc98e1828821449ecb4e1f222348021028700f99e470",
+    "assets/member-longxing-gallery-__2.jpg": "f1dce476b7fe77a57c0953971af982cce7c5d4441df684b4073824bb205726c4",
+    "assets/member-longxing-gallery-__217_________.jpg": "becfb25f1f5c83d801c0b6a1db29f4b3c4cb95df5a91984e9d0a67e3938f93e4",
+    "assets/member-longxing-gallery-__3.jpg": "311ae21d383220005abeeac0623fb4403d54e1fefd1cab9ed1dec2e5478e68ab",
+    "assets/member-longxing-gallery-__4.jpg": "126e559af511641e78bbc140ab9356dc2b64d89df9c5950e644ed8eda832725f",
+    "assets/member-longxing-gallery-_____.jpg": "172fe4321bc8d76509413d82104ea74f2fe5f315b4cd85fe36fa4e4266dd3e19",
+    "assets/member-longxing-gallery-_____2.jpg": "b369b99185a7ba6af7f4217959265b924e8b26dd044b732f04f538c113df3aba",
+    "assets/member-longxing-gallery-___________-2.jpg": "1e9d2271fc84018b2f65d1ce6935349865917b445385e7bd387bb518c458676e",
+    "assets/member-longxing-gallery-___________-map.png": "7fef91eeb658dcbee2c47ec1e3c2b95f6e98c765e8b7d37f1ed6c9202353754b",
+    "assets/member-longxing-gallery-___________.jpg": "b4321ef32bb6352427667882281a0f09734fcab26ddf8b349e64b7794b394bb3",
+    "assets/member-longxing-logo-______-logo-04.png": "ec46130bd1687351accd9d8b75d30523a628de5cceee360feae2b4f107661934",
+    "assets/member-longxing.png": "ec46130bd1687351accd9d8b75d30523a628de5cceee360feae2b4f107661934",
+    "assets/member-shengli-gallery-_____20260928145028_65_732.jpg": "d9e0f1d3022b0b4f4cbd66014cbcdb73e05b298518166362762eb106838abf71",
+    "assets/member-shengli-gallery-_____20260928162757_72_732.jpg": "42820a55d872d370a9e37305d3b6c67db37052355d6a29a2f9a478f9f2b5234c",
+    "assets/member-shengli.jpg": "d9e0f1d3022b0b4f4cbd66014cbcdb73e05b298518166362762eb106838abf71",
+    "assets/member-showcase.jpg": "481d9beb37d550080a43350de859686e899a8397da334d3ed426d7db7f534bdf",
+    "assets/member-shunze-gallery-____1.jpg": "8655b4dc0ca33cd1532023819ca2630d7bf0632cf0f8720e706ca5df5ae3bed2",
+    "assets/member-shunze-gallery-____2.jpg": "ffa97f948e406369d9af1688feefcf3fefea3258e0836a44adc369e0dae87299",
+    "assets/member-shunze-gallery-____3.jpg": "461ef0860d41dd97aad7904e1e6dd7c7fb0b5b7c479590a7c0f61b801a1f7ed8",
+    "assets/member-shunze-logo-__logo1.png": "6579b4a4a1f9ee67d44d7a3df03854e7800a01b7c8e4ff6ac0533ffc154200c7",
+    "assets/member-shunze-logo-__logo2.png": "c0019e76a119b7d4127a2e0eb45d27af501d721de674b8a0b024f476b3452b38",
+    "assets/member-shunze.png": "6579b4a4a1f9ee67d44d7a3df03854e7800a01b7c8e4ff6ac0533ffc154200c7",
+    "assets/member-zhishang-gallery-1.png": "71b3ac09d882551decee5b0b2b3d597379dd0b8d45fe4066c1e5b4c85e5c4239",
+    "assets/member-zhishang-gallery-10.jpeg": "baebc24fc36e7cc2908af0e6914d4869b6c83f55673195f1b50328a7734f6632",
+    "assets/member-zhishang-gallery-11.jpeg": "775c01e05601e82a1f24d991e7d39fcd859117765e875f234f7de8f7cb27fc40",
+    "assets/member-zhishang-gallery-12.png": "8dc6efe37437d7419c88fdfd7d9968613f49d49e823b26c4c84134e19c373ef8",
+    "assets/member-zhishang-gallery-2.png": "ee0ce48c07ab51dfaf2799c3857bb351fd4df57bb849cc2d3f4f32a979b60e02",
+    "assets/member-zhishang-gallery-3.png": "1c7d037196805dd85f4dfd31b2777a60bd2ddfc954d03801c3bf6b3d9fd355e6",
+    "assets/member-zhishang-gallery-4.png": "2cae0ae35d282afd2e62687e050de6ba532c8f8cc259667c04483a6bceab368e",
+    "assets/member-zhishang-gallery-5.jpeg": "a4e5481f80172e6a7a2ccfc16aee1c6f9102fd0f3703d6a0a6680ffbb70cf8ad",
+    "assets/member-zhishang-gallery-6.png": "2cac85a9ef1c243bb53d351d969cafc812fc3c9f3ea0e584a187cfa693648bd8",
+    "assets/member-zhishang-gallery-7.png": "6546766fd0bf37b238fd3e55537088ebbbed337c82c6ef811cd037754eff7511",
+    "assets/member-zhishang-gallery-8.png": "9191a0729d7edbcb80cde10d4a7b563f6ae95bd467befeb3a1ff21df8122beb9",
+    "assets/member-zhishang-gallery-9.png": "64f3fe8c5ece036c378566d5be630f240b7b357faab3fec22ee189c4c60df4c3",
+    "assets/member-zhishang-logo.png": "38920584494139f31f8dcf5377118e080fe895e781774c2b549c0b4d55d8f785",
+    "assets/news-activity.jpg": "6e1c6285eb0494e545dbd80cd3ee1ade25e0c02ec0842d66d0ec785466bd7cc0",
+    "assets/qrcode-wechat.jpg": "8a0ce2db10273d0bc053e26272b3b79db1b890591392757def64d01315b1ba07"
+  },
+  "designDir": "/workspace/weifang-advertising-association",
+  "expectedPages": null,
+  "requireInteractions": null,
+  "checkedAt": "2026-10-23T07:02:21.351Z"
+}

@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潍坊市广告协会 - 协会动态</title>
+    <style id="theme-vars">
+/* ============================================================
+   潍坊市广告协会官网 — Brand CSS (科技蓝 / Tech Blue)
+   Single brand primary hue (blue) + tints, neutral scale, state colors.
+   Free-explore mode: no secondary/accent hue. Identity styling uses
+   primary tint, neutral tint, layout, and icons only.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Primary (tech blue) scale ---------- */
+  --wf-primary-50:  #ECF3FE;
+  --wf-primary-100: #D7E4FC;
+  --wf-primary-200: #B0C9FA;
+  --wf-primary-300: #82A8F4;
+  --wf-primary-400: #4F84EC;
+  --wf-primary-500: #1659D6;   /* brand primary */
+  --wf-primary-600: #1247AE;
+  --wf-primary-700: #0E3786;
+  --wf-primary-800: #0A2760;
+  --wf-primary-900: #07193D;
+
+  /* ---------- Neutral (slate) scale ---------- */
+  --wf-neutral-50:  #F6F8FC;
+  --wf-neutral-100: #EAEFF6;
+  --wf-neutral-200: #D5DEEC;
+  --wf-neutral-300: #B3C0D6;
+  --wf-neutral-400: #8493AE;
+  --wf-neutral-500: #5C6B85;
+  --wf-neutral-600: #44516A;
+  --wf-neutral-700: #2F3A4F;
+  --wf-neutral-800: #1C2536;
+  --wf-neutral-900: #0F1626;
+
+  /* ---------- Ink (deep navy for dark alternating sections) ---------- */
+  --wf-ink:    #0A1B3D;
+  --wf-ink-2:  #0F2547;
+  --wf-ink-3:  #16315C;
+
+  /* ---------- State colors (semantic status only) ---------- */
+  --state-success: #16A34A;
+  --state-warning: #D97706;
+  --state-error:   #DC2626;
+  --state-info:    #0EA5E9;
+
+  /* ---------- Semantic aliases (light) ---------- */
+  --wf-background: #FFFFFF;
+  --wf-foreground: #0F1626;
+  --wf-card: #FFFFFF;
+  --wf-card-foreground: #1C2536;
+  --wf-popover: #FFFFFF;
+  --wf-popover-foreground: #1C2536;
+  --wf-primary: var(--wf-primary-500);
+  --wf-primary-foreground: #FFFFFF;
+  --wf-muted: #F6F8FC;
+  --wf-muted-foreground: #5C6B85;
+  --wf-border: #E4EAF3;
+  --wf-input: #D5DEEC;
+  --wf-ring: var(--wf-primary-500);
+
+  /* ---------- Radius (restrained) ---------- */
+  --wf-radius-small: 4px;
+  --wf-radius-medium: 8px;
+  --wf-radius-large: 12px;
+  --wf-radius-full: 9999px;
+
+  /* ---------- Typography system ---------- */
+  --wf-font-display: "Sora", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --wf-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* ---------- Layout rhythm ---------- */
+  --wf-container: 1200px;
+  --wf-section-pad-y: 88px;
+  --wf-section-gap: 64px;
+}
+
+/* ---------- Dark theme override (for .dark sections / dark mode) ---------- */
+.dark {
+  --wf-background: #0A1B3D;
+  --wf-foreground: #EAEFF6;
+  --wf-card: #0F2547;
+  --wf-card-foreground: #D5DEEC;
+  --wf-popover: #0F2547;
+  --wf-popover-foreground: #D5DEEC;
+  --wf-primary: #4F84EC;
+  --wf-primary-foreground: #07193D;
+  --wf-muted: #1C2536;
+  --wf-muted-foreground: #B3C0D6;
+  --wf-border: #2F3A4F;
+  --wf-input: #2F3A4F;
+  --wf-ring: #4F84EC;
+}
+
+/* ---------- Base typography ---------- */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  font-family: var(--wf-font-sans);
+  background-color: var(--wf-background);
+  color: var(--wf-foreground);
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--wf-font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--wf-foreground);
+}
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Brand utility classes ---------- */
+.wf-container {
+  width: 100%;
+  max-width: var(--wf-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Bilingual section header: 中文主标题 + EN 小标签 (raise.cn paradigm) */
+.wf-section-eyebrow {
+  font-family: var(--wf-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--wf-primary-500);
+}
+.wf-section-title {
+  font-family: var(--wf-font-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* MORE link / pill button */
+.wf-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wf-primary-600);
+}
+
+/* Card hover overlay (raise.cn case-card pattern) */
+.wf-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(10,27,61,0) 0%, rgba(10,27,61,0.72) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Static surfaces: border-led, no heavy shadow */
+.wf-surface {
+  background-color: var(--wf-card);
+  border: 1px solid var(--wf-border);
+  border-radius: var(--wf-radius-large);
+}
+
+/* ---------- Shared component styles (inlined into every page head) ---------- */
+
+/* Icons */
+.wf-ico-sm { width: 15px; height: 15px; flex-shrink: 0; }
+.wf-ico-md { width: 20px; height: 20px; flex-shrink: 0; }
+.wf-ico-lg { width: 28px; height: 28px; flex-shrink: 0; }
+[data-lucide] { width: 1em; height: 1em; stroke-width: 1.8; }
+
+/* ---------- Header ---------- */
+.wf-site-header { position: sticky; top: 0; z-index: 50; transition: background .3s ease; }
+.wf-topbar { background: transparent; color: rgba(255,255,255,.82); font-size: 13px; }
+.wf-topbar-inner { display: flex; align-items: center; justify-content: space-between; height: 38px; }
+.wf-topbar-welcome { opacity: .85; }
+.wf-topbar-actions { display: flex; align-items: center; gap: 22px; }
+.wf-topbar-link { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,.82); transition: color .2s; }
+.wf-topbar-link:hover { color: #fff; }
+.wf-topbar-cta { display: inline-flex; align-items: center; height: 24px; padding: 0 14px; border: 1px solid rgba(255,255,255,.45); color: #fff; border-radius: var(--wf-radius-full); font-size: 12px; font-weight: 600; transition: background .2s, border-color .2s; }
+.wf-topbar-cta:hover { background: rgba(255,255,255,.16); border-color: #fff; }
+.wf-mainbar { background: transparent; border-bottom: 1px solid transparent; box-shadow: none; }
+.wf-mainbar-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.wf-brand { display: flex; align-items: center; gap: 12px; }
+.wf-brand-mark { display: inline-flex; align-items: center; justify-content: center; width: auto; height: 52px; padding: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; filter: drop-shadow(0 1px 2px rgba(0,0,0,.4)); }
+.wf-brand-mark img { height: 100%; width: auto; display: block; }
+.wf-brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.wf-brand-cn { font-family: var(--wf-font-display); font-size: 20px; font-weight: 800; color: #fff; letter-spacing: .02em; }
+.wf-brand-en { font-size: 10px; font-weight: 600; letter-spacing: .14em; color: rgba(255,255,255,.6); text-transform: uppercase; }
+.wf-nav { display: flex; align-items: center; gap: 4px; }
+.wf-nav-item { position: relative; padding: 8px 16px; font-size: 15px; font-weight: 500; color: rgba(255,255,255,.9); border-radius: var(--wf-radius-medium); transition: color .2s, background .2s; }
+.wf-nav-item:hover { color: #fff; background: rgba(255,255,255,.12); }
+.wf-nav-item[data-active="true"] { color: #fff; }
+.wf-nav-item[data-active="true"]::after { content: ""; position: absolute; left: 16px; right: 16px; bottom: -27px; height: 3px; border-radius: 2px; background: var(--wf-primary-300); }
+.wf-nav-highlight { color: #fff; font-weight: 600; }
+
+/* 滚动后悬浮为深色磨砂，保证白字在浅色区块上可读 */
+.wf-site-header.is-scrolled .wf-topbar { background: rgba(7,25,61,.6); color: rgba(255,255,255,.9); }
+.wf-site-header.is-scrolled .wf-mainbar {
+  background: rgba(7,25,61,.78);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 6px 24px rgba(7,25,61,.2);
+}
+
+/* ---------- Footer ---------- */
+.wf-site-footer { background: var(--wf-ink); color: var(--wf-neutral-300); }
+.wf-footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr .8fr; gap: 48px; padding-top: 64px; padding-bottom: 48px; }
+.wf-footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.wf-footer-brand .wf-brand-mark { height: 42px; padding: 0; }
+.wf-footer-desc { font-size: 13.5px; line-height: 1.85; color: var(--wf-neutral-400); max-width: 360px; }
+.wf-footer-title { color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 18px; }
+.wf-footer-links { display: flex; flex-direction: column; gap: 12px; }
+.wf-footer-links a { font-size: 13.5px; color: var(--wf-neutral-400); transition: color .2s; }
+.wf-footer-links a:hover { color: var(--wf-primary-300); }
+.wf-footer-contact li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--wf-neutral-400); }
+.wf-footer-qr { text-align: center; }
+.wf-qr-box { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 104px; background: #fff; border-radius: var(--wf-radius-medium); color: var(--wf-ink); margin-bottom: 8px; }
+.wf-qr-box [data-lucide] { width: 80px; height: 80px; }
+.wf-qr-label { font-size: 12.5px; color: var(--wf-neutral-400); }
+.wf-footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; }
+.wf-footer-bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.wf-footer-friendly { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.wf-footer-friendly-label { color: var(--wf-neutral-500); }
+.wf-footer-friendly a { color: var(--wf-neutral-400); transition: color .2s; }
+.wf-footer-friendly a:hover { color: var(--wf-primary-300); }
+.wf-footer-copy { font-size: 12.5px; color: var(--wf-neutral-500); }
+
+/* ---------- Section frame ---------- */
+.wf-section { padding: var(--wf-section-pad-y) 0; }
+.wf-section-tight { padding: 56px 0; }
+.wf-section-ink { background: var(--wf-ink); color: var(--wf-neutral-200); }
+.wf-section-muted { background: var(--wf-muted); }
+.wf-section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; }
+.wf-section-head-left { display: flex; flex-direction: column; gap: 10px; }
+.wf-section-ink .wf-section-eyebrow { color: var(--wf-primary-300); }
+.wf-section-ink .wf-section-title { color: #fff; }
+.wf-section-desc { font-size: 15px; color: var(--wf-neutral-500); max-width: 520px; }
+.wf-section-ink .wf-section-desc { color: var(--wf-neutral-400); }
+
+/* ---------- Buttons ---------- */
+.wf-btn { display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 26px; border-radius: var(--wf-radius-medium); font-size: 15px; font-weight: 600; font-family: var(--wf-font-sans); transition: all .2s; cursor: pointer; border: 1px solid transparent; }
+.wf-btn-primary { background: var(--wf-primary-500); color: #fff; }
+.wf-btn-primary:hover { background: var(--wf-primary-600); transform: translateY(-1px); }
+.wf-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.wf-btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+.wf-btn-outline { background: transparent; color: var(--wf-primary-600); border-color: var(--wf-primary-200); }
+.wf-btn-outline:hover { background: var(--wf-primary-50); border-color: var(--wf-primary-400); }
+
+/* ---------- Cards ---------- */
+.wf-card { background: var(--wf-card); border: 1px solid var(--wf-border); border-radius: var(--wf-radius-large); overflow: hidden; transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.wf-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px -16px rgba(10,27,61,.18); border-color: var(--wf-primary-200); }
+.wf-card-media { position: relative; aspect-ratio: 16/10; overflow: hidden; }
+.wf-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.wf-card:hover .wf-card-media img { transform: scale(1.06); }
+.wf-card-body { padding: 20px 22px; }
+.wf-card-tag { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: var(--wf-radius-small); background: var(--wf-primary-50); color: var(--wf-primary-600); font-size: 12px; font-weight: 600; }
+.wf-card-title { font-size: 17px; font-weight: 700; line-height: 1.4; margin-top: 12px; color: var(--wf-foreground); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wf-card:hover .wf-card-title { color: var(--wf-primary-600); }
+.wf-card-meta { display: flex; align-items: center; gap: 14px; margin-top: 14px; font-size: 13px; color: var(--wf-neutral-400); }
+.wf-card-excerpt { font-size: 14px; color: var(--wf-neutral-500); line-height: 1.7; margin-top: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- Grids ---------- */
+.wf-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.wf-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.wf-grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+
+/* ---------- Stats band ---------- */
+.wf-stat { text-align: center; }
+.wf-stat-num { font-family: var(--wf-font-display); font-size: 42px; font-weight: 800; color: #fff; line-height: 1; }
+.wf-stat-num span { font-size: 22px; font-weight: 600; opacity: .8; margin-left: 2px; }
+.wf-stat-label { font-size: 14px; color: var(--wf-neutral-400); margin-top: 10px; }
+
+/* ---------- Responsive (shared) ---------- */
+@media (max-width: 900px) {
+  .wf-topbar-welcome { display: none; }
+  .wf-nav { display: none; }
+  .wf-grid-3, .wf-grid-4, .wf-grid-5 { grid-template-columns: repeat(2, 1fr); }
+  .wf-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .wf-section { padding: 56px 0; }
+  .wf-section-head { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 560px) {
+  .wf-grid-3, .wf-grid-4, .wf-grid-5 { grid-template-columns: 1fr; }
+  .wf-footer-grid { grid-template-columns: 1fr; }
+  .wf-section-title { font-size: 28px; }
+}
+
+/* =================================================================
+   DYNAMIC BACKGROUND SYSTEM (raise.cn 风格沉浸式区块背景)
+   ================================================================= */
+
+/* Keyframes —— 缓慢 Ken Burns 缩放、光斑漂浮、光线流动 */
+@keyframes wf-kenburns {
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(1.08) translate(-1.2%, -1%); }
+  100% { transform: scale(1.12) translate(1%, 1.2%); }
+}
+@keyframes wf-float-orb {
+  0%   { transform: translate(0, 0) scale(1); opacity: .35; }
+  50%  { transform: translate(30px, -20px) scale(1.25); opacity: .55; }
+  100% { transform: translate(0, 0) scale(1); opacity: .35; }
+}
+@keyframes wf-float-orb-2 {
+  0%   { transform: translate(0, 0) scale(1); opacity: .25; }
+  50%  { transform: translate(-40px, 25px) scale(1.3); opacity: .45; }
+  100% { transform: translate(0, 0) scale(1); opacity: .25; }
+}
+@keyframes wf-beam {
+  0%   { transform: translateX(-100%) skewX(-18deg); opacity: 0; }
+  30%  { opacity: .25; }
+  100% { transform: translateX(200%) skewX(-18deg); opacity: 0; }
+}
+@keyframes wf-grid-pulse {
+  0%, 100% { opacity: .06; }
+  50%      { opacity: .14; }
+}
+@keyframes wf-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- 基础背景区块 ---------- */
+.wf-bg-section {
+  position: relative;
+  overflow: hidden;
+}
+.wf-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+.wf-bg-section::after {
+  /* 深色渐变蒙层 */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.wf-bg-section .wf-container { position: relative; z-index: 2; }
+.wf-bg-section .wf-bg-orbs,
+.wf-bg-section .wf-bg-beam { z-index: 1; }
+
+/* 动效开关：加上 .wf-bg-kenburns 即开启缓慢缩放 */
+.wf-bg-kenburns .wf-bg-img {
+  animation: wf-kenburns 28s ease-in-out infinite alternate;
+}
+
+/* ---------- 背景变体（每个区块不同图、不同蒙层色） ---------- */
+
+/* Hero 城市主视觉 */
+.wf-bg-hero .wf-bg-img { object-position: center 30%; }
+.wf-bg-hero::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.92) 0%, rgba(10,27,61,.78) 45%, rgba(10,27,61,.55) 75%, rgba(22,89,214,.35) 100%),
+    radial-gradient(ellipse at 80% 40%, rgba(22,89,214,.35) 0%, transparent 55%);
+}
+
+/* 数据带 —— 深蓝纯色 + 网格纹理（延续 hero，不用新图避免闪烁） */
+.wf-bg-stats { background: linear-gradient(180deg, #0A1B3D 0%, #0d2452 100%); }
+.wf-bg-stats::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(22,89,214,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22,89,214,.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  animation: wf-grid-pulse 6s ease-in-out infinite;
+  z-index: 0;
+}
+.wf-bg-stats::after { display: none; }
+.wf-bg-stats > * { position: relative; z-index: 1; }
+
+/* 潍广通预览 —— 科技媒体抽象背景 */
+.wf-bg-media .wf-bg-img { object-position: center center; }
+.wf-bg-media::after {
+  background:
+    linear-gradient(180deg, rgba(246,249,253,.94) 0%, rgba(246,249,253,.88) 100%);
+}
+
+/* 会员风采 —— 商务合作剪影 */
+.wf-bg-member .wf-bg-img { object-position: center 30%; }
+.wf-bg-member::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.9) 0%, rgba(10,27,61,.75) 55%, rgba(10,27,61,.55) 100%);
+}
+.wf-bg-member { color: #fff; }
+.wf-bg-member .wf-section-title { color: #fff; }
+.wf-bg-member .wf-section-desc { color: var(--wf-neutral-300); }
+.wf-bg-member .wf-section-eyebrow { color: var(--wf-primary-300); }
+
+/* CTA 入会带 —— 城市夜景 */
+.wf-bg-cta .wf-bg-img { object-position: center 60%; }
+.wf-bg-cta::after {
+  background:
+    linear-gradient(90deg, rgba(7,25,61,.92) 0%, rgba(10,27,61,.7) 50%, rgba(7,25,61,.92) 100%),
+    radial-gradient(ellipse at 50% 50%, rgba(22,89,214,.3) 0%, transparent 60%);
+}
+
+/* 新闻页 Banner */
+.wf-bg-banner-news .wf-bg-img { object-position: center 40%; }
+.wf-bg-banner-news::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.95) 0%, rgba(7,25,61,.88) 50%, rgba(7,25,61,.82) 100%);
+}
+
+/* 潍广通页 Banner */
+.wf-bg-banner-media .wf-bg-img { object-position: center 45%; }
+.wf-bg-banner-media::after {
+  background:
+    linear-gradient(100deg, rgba(7,25,61,.92) 0%, rgba(10,27,61,.78) 50%, rgba(22,89,214,.5) 100%);
+}
+
+/* 潍广通发布/寻找 CTA */
+.wf-bg-cta-publish .wf-bg-img { object-position: center 40%; }
+.wf-bg-cta-publish::after {
+  background:
+    linear-gradient(90deg, rgba(7,25,61,.9) 0%, rgba(10,27,61,.6) 50%, rgba(7,25,61,.9) 100%);
+}
+
+/* ---------- 装饰光斑（漂浮在背景之上） ---------- */
+.wf-bg-orbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.wf-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  background: radial-gradient(circle, rgba(22,89,214,.55) 0%, rgba(22,89,214,0) 70%);
+}
+.wf-bg-orb.o1 { width: 380px; height: 380px; top: -80px; left: -60px; animation: wf-float-orb 14s ease-in-out infinite; }
+.wf-bg-orb.o2 { width: 280px; height: 280px; bottom: -60px; right: 10%; background: radial-gradient(circle, rgba(83,152,255,.45) 0%, rgba(83,152,255,0) 70%); animation: wf-float-orb-2 18s ease-in-out infinite; }
+.wf-bg-orb.o3 { width: 200px; height: 200px; top: 30%; right: -40px; background: radial-gradient(circle, rgba(22,89,214,.4) 0%, rgba(22,89,214,0) 70%); animation: wf-float-orb 22s ease-in-out infinite; }
+
+/* 光束扫过 */
+.wf-bg-beam {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 35%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.08) 50%, transparent 100%);
+  animation: wf-beam 12s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------- 入场动效（滚动触发需 JS，此处提供 CSS 类） ---------- */
+.wf-reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+.wf-reveal.in-view { opacity: 1; transform: translateY(0); }
+.wf-reveal-delay-1 { transition-delay: .1s; }
+.wf-reveal-delay-2 { transition-delay: .2s; }
+.wf-reveal-delay-3 { transition-delay: .3s; }
+.wf-reveal-delay-4 { transition-delay: .4s; }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--wf-background);
+    --color-foreground: var(--wf-foreground);
+    --color-card: var(--wf-card);
+    --color-card-foreground: var(--wf-card-foreground);
+    --color-popover: var(--wf-popover);
+    --color-popover-foreground: var(--wf-popover-foreground);
+    --color-primary: var(--wf-primary);
+    --color-primary-foreground: var(--wf-primary-foreground);
+    --color-muted: var(--wf-muted);
+    --color-muted-foreground: var(--wf-muted-foreground);
+    --color-border: var(--wf-border);
+    --color-input: var(--wf-input);
+    --color-ring: var(--wf-ring);
+    --radius-sm: var(--wf-radius-small);
+    --radius-md: var(--wf-radius-medium);
+    --radius-lg: var(--wf-radius-large);
+  }
+  @layer base {
+    body { background: var(--wf-background); color: var(--wf-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--wf-background); }
+      .text-background { color: var(--wf-background); }
+      .border-background { border-color: var(--wf-background); }
+      .ring-background { --tw-ring-color: var(--wf-background); }
+      .bg-foreground { background-color: var(--wf-foreground); }
+      .text-foreground { color: var(--wf-foreground); }
+      .border-foreground { border-color: var(--wf-foreground); }
+      .ring-foreground { --tw-ring-color: var(--wf-foreground); }
+      .bg-card { background-color: var(--wf-card); }
+      .text-card { color: var(--wf-card); }
+      .border-card { border-color: var(--wf-card); }
+      .ring-card { --tw-ring-color: var(--wf-card); }
+      .bg-card-foreground { background-color: var(--wf-card-foreground); }
+      .text-card-foreground { color: var(--wf-card-foreground); }
+      .border-card-foreground { border-color: var(--wf-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--wf-card-foreground); }
+      .bg-popover { background-color: var(--wf-popover); }
+      .text-popover { color: var(--wf-popover); }
+      .border-popover { border-color: var(--wf-popover); }
+      .ring-popover { --tw-ring-color: var(--wf-popover); }
+      .bg-popover-foreground { background-color: var(--wf-popover-foreground); }
+      .text-popover-foreground { color: var(--wf-popover-foreground); }
+      .border-popover-foreground { border-color: var(--wf-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--wf-popover-foreground); }
+      .bg-primary { background-color: var(--wf-primary); }
+      .text-primary { color: var(--wf-primary); }
+      .border-primary { border-color: var(--wf-primary); }
+      .ring-primary { --tw-ring-color: var(--wf-primary); }
+      .bg-primary-foreground { background-color: var(--wf-primary-foreground); }
+      .text-primary-foreground { color: var(--wf-primary-foreground); }
+      .border-primary-foreground { border-color: var(--wf-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--wf-primary-foreground); }
+      .bg-muted { background-color: var(--wf-muted); }
+      .text-muted { color: var(--wf-muted); }
+      .border-muted { border-color: var(--wf-muted); }
+      .ring-muted { --tw-ring-color: var(--wf-muted); }
+      .bg-muted-foreground { background-color: var(--wf-muted-foreground); }
+      .text-muted-foreground { color: var(--wf-muted-foreground); }
+      .border-muted-foreground { border-color: var(--wf-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--wf-muted-foreground); }
+      .bg-border { background-color: var(--wf-border); }
+      .text-border { color: var(--wf-border); }
+      .border-border { border-color: var(--wf-border); }
+      .ring-border { --tw-ring-color: var(--wf-border); }
+      .bg-input { background-color: var(--wf-input); }
+      .text-input { color: var(--wf-input); }
+      .border-input { border-color: var(--wf-input); }
+      .ring-input { --tw-ring-color: var(--wf-input); }
+      .bg-ring { background-color: var(--wf-ring); }
+      .text-ring { color: var(--wf-ring); }
+      .border-ring { border-color: var(--wf-ring); }
+      .ring-ring { --tw-ring-color: var(--wf-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+  <style id="critical-layout">
+    /* ===== 协会动态页 — 页面专属样式（全部 var(--wf-*) token） ===== */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    /* ---------- Banner（沉浸式动态背景由 .wf-bg-banner-news 提供） ---------- */
+    .news-banner {
+      position: relative;
+      color: #ffffff;
+      overflow: hidden;
+      min-height: 394px;
+      margin-top: -114px;
+      display: flex;
+      align-items: center;
+    }
+    .news-banner h1,
+    .news-banner .news-banner-eyebrow,
+    .news-banner .news-banner-sub,
+    .news-banner .news-breadcrumb,
+    .news-banner .news-breadcrumb a,
+    .news-banner .news-breadcrumb span,
+    .news-banner .news-breadcrumb-current,
+    .news-banner p {
+      color: #ffffff !important;
+    }
+    .news-banner .news-breadcrumb a:hover { color: var(--wf-primary-300) !important; }
+    .news-banner .news-breadcrumb [data-lucide] { opacity: .75; }
+    .news-banner-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--wf-container);
+      margin: 0 auto;
+      padding: 172px 24px 62px;
+      text-align: center;
+    }
+    .news-banner-inner .news-breadcrumb,
+    .news-banner-inner .news-breadcrumb a,
+    .news-banner-inner .news-breadcrumb span,
+    .news-banner-inner .news-breadcrumb-current,
+    .news-banner-inner .news-banner-eyebrow,
+    .news-banner-inner h1,
+    .news-banner-inner .news-banner-sub,
+    .news-banner-inner p {
+      color: #ffffff;
+    }
+    .news-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255,255,255,.95);
+      margin-bottom: 20px;
+    }
+    .news-breadcrumb a { color: rgba(255,255,255,.95); transition: color .2s; }
+    .news-breadcrumb a:hover { color: #ffffff; }
+    .news-breadcrumb-current { color: #ffffff; }
+    .news-breadcrumb [data-lucide] { width: 14px; height: 14px; opacity: .75; }
+    .news-banner-eyebrow {
+      display: block;
+      font-family: var(--wf-font-display);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .news-banner h1 {
+      font-family: var(--wf-font-display);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: .01em;
+      text-wrap: balance;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+    .news-banner-sub {
+      margin-top: 14px;
+      font-size: 15px;
+      color: rgba(255,255,255,.95);
+    }
+
+    /* ---------- 两栏布局 ---------- */
+    .news-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: start;
+      max-width: var(--wf-container);
+      margin: 0 auto;
+      padding: 56px 24px 84px;
+    }
+    .news-main { min-width: 0; }
+    .news-sidebar { min-width: 0; }
+
+    /* ---------- Tabs ---------- */
+    .news-tabs {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid var(--wf-border);
+      margin-bottom: 28px;
+    }
+    .news-tab {
+      position: relative;
+      padding: 12px 20px;
+      font-family: var(--wf-font-sans);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--wf-neutral-500);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color .2s;
+    }
+    .news-tab:hover { color: var(--wf-primary-600); }
+    .news-tab[data-active="true"] { color: var(--wf-primary-600); }
+    .news-tab[data-active="true"]::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: -1px;
+      height: 3px;
+      border-radius: 2px 2px 0 0;
+      background: var(--wf-primary-500);
+    }
+
+    /* ---------- 新闻列表 ---------- */
+    .news-list { display: flex; flex-direction: column; gap: 16px; }
+    .news-item {
+      display: flex;
+      gap: 22px;
+      padding: 22px 24px;
+      background: var(--wf-card);
+      border: 1px solid var(--wf-border);
+      border-radius: var(--wf-radius-large);
+      transition: transform .24s cubic-bezier(.2,.8,.2,1), box-shadow .24s ease, border-color .24s ease;
+    }
+    .news-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px -18px color-mix(in srgb, var(--wf-ink) 22%, transparent);
+      border-color: var(--wf-primary-200);
+    }
+    .news-date {
+      flex-shrink: 0;
+      width: 78px;
+      padding: 14px 0;
+      text-align: center;
+      border-left: 3px solid var(--wf-primary-500);
+      background: var(--wf-primary-50);
+      border-radius: 0 var(--wf-radius-medium) var(--wf-radius-medium) 0;
+    }
+    .news-date-day {
+      font-family: var(--wf-font-display);
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--wf-primary-600);
+      font-variant-numeric: tabular-nums;
+    }
+    .news-date-ym {
+      display: block;
+      margin-top: 7px;
+      font-size: 12px;
+      color: var(--wf-neutral-500);
+      font-variant-numeric: tabular-nums;
+    }
+    .news-content { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+    .news-item-head { display: flex; align-items: center; gap: 10px; }
+    .news-item-title {
+      font-family: var(--wf-font-display);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--wf-foreground);
+      margin-top: 10px;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      transition: color .2s;
+    }
+    .news-item:hover .news-item-title { color: var(--wf-primary-600); }
+    .news-item-excerpt {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--wf-neutral-500);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .news-item-link {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--wf-primary-600);
+      transition: gap .2s ease;
+    }
+    .news-item-link [data-lucide] { width: 16px; height: 16px; transition: transform .2s ease; }
+    .news-item-link:hover { gap: 10px; }
+    .news-item-link:hover [data-lucide] { transform: translateX(2px); }
+
+    /* ---------- 分页 ---------- */
+    .news-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 38px;
+    }
+    .news-page {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      min-width: 38px;
+      height: 38px;
+      padding: 0 12px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--wf-neutral-600);
+      background: var(--wf-card);
+      border: 1px solid var(--wf-border);
+      border-radius: var(--wf-radius-medium);
+      cursor: pointer;
+      transition: color .2s, border-color .2s, background .2s;
+    }
+    .news-page:hover { color: var(--wf-primary-600); border-color: var(--wf-primary-300); }
+    .news-page[data-active="true"] {
+      background: var(--wf-primary-500);
+      border-color: var(--wf-primary-500);
+      color: var(--wf-primary-foreground);
+      font-weight: 600;
+      cursor: default;
+    }
+    .news-page [data-lucide] { width: 15px; height: 15px; }
+    .news-page-ellipsis { padding: 0 4px; color: var(--wf-neutral-400); }
+
+    /* ---------- 侧边栏 ---------- */
+    .news-sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card {
+      background: var(--wf-card);
+      border: 1px solid var(--wf-border);
+      border-radius: var(--wf-radius-large);
+      padding: 24px;
+    }
+    .sidebar-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--wf-font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--wf-foreground);
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--wf-border);
+    }
+    .sidebar-title [data-lucide] { width: 18px; height: 18px; color: var(--wf-primary-500); flex-shrink: 0; }
+
+    /* 热门资讯 */
+    .hot-list { display: flex; flex-direction: column; gap: 14px; }
+    .hot-item { display: flex; align-items: flex-start; gap: 12px; }
+    .hot-rank {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--wf-font-display);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--wf-neutral-500);
+      background: var(--wf-neutral-100);
+      border-radius: var(--wf-radius-small);
+      font-variant-numeric: tabular-nums;
+    }
+    .hot-item:nth-child(1) .hot-rank,
+    .hot-item:nth-child(2) .hot-rank,
+    .hot-item:nth-child(3) .hot-rank {
+      background: var(--wf-primary-500);
+      color: var(--wf-primary-foreground);
+    }
+    .hot-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--wf-neutral-700);
+      transition: color .2s;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .hot-item:hover .hot-text { color: var(--wf-primary-600); }
+
+    /* 联系我们 */
+    .contact-list { display: flex; flex-direction: column; gap: 14px; }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--wf-neutral-600);
+    }
+    .contact-item [data-lucide] { width: 16px; height: 16px; color: var(--wf-primary-500); flex-shrink: 0; margin-top: 3px; }
+    .contact-btn { display: flex; width: 100%; justify-content: center; margin-top: 20px; }
+
+    /* 关注我们 */
+    .follow-qr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 124px;
+      height: 124px;
+      margin: 0 auto 14px;
+      background: var(--wf-neutral-50);
+      border: 1px solid var(--wf-border);
+      border-radius: var(--wf-radius-medium);
+      color: var(--wf-ink);
+    }
+    .follow-qr [data-lucide] { width: 92px; height: 92px; }
+    .follow-desc { font-size: 13px; line-height: 1.7; color: var(--wf-neutral-500); text-align: center; }
+
+    /* ---------- 焦点态 ---------- */
+    .news-tab:focus-visible,
+    .news-page:focus-visible,
+    .news-item-link:focus-visible,
+    .hot-item:focus-visible,
+    .contact-btn:focus-visible {
+      outline: 2px solid var(--wf-ring);
+      outline-offset: 2px;
+      border-radius: var(--wf-radius-medium);
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 900px) {
+      .news-layout { grid-template-columns: 1fr; gap: 32px; padding: 44px 24px 60px; }
+    }
+    @media (max-width: 560px) {
+      .news-banner-inner { padding: 158px 20px 46px; }
+      .news-item { flex-direction: column; gap: 14px; padding: 18px; }
+      .news-date {
+        width: auto;
+        align-self: flex-start;
+        display: inline-flex;
+        align-items: baseline;
+        gap: 8px;
+        padding: 8px 14px;
+      }
+      .news-date-day { font-size: 22px; }
+      .news-date-ym { margin-top: 0; }
+      .news-item-title { font-size: 17px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+
+  <!-- ============ SITE HEADER ============ -->
+  <header class="wf-site-header">
+    <!-- Utility top bar -->
+    <div class="wf-topbar">
+      <div class="wf-container wf-topbar-inner">
+        <span class="wf-topbar-welcome">欢迎来到潍坊市广告协会官方网站</span>
+        <div class="wf-topbar-actions">
+          <a href="./contact.html" class="wf-topbar-link"><i data-lucide="phone" class="wf-ico-sm"></i>0536-8888XXX</a>
+          <a href="./contact.html" class="wf-topbar-link"><i data-lucide="mail" class="wf-ico-sm"></i>wfsggxh2026@163.com</a>
+          <a href="./service.html" class="wf-topbar-cta">入会申请</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main header -->
+    <div class="wf-mainbar">
+      <div class="wf-container wf-mainbar-inner">
+              <a href="./index.html" class="wf-brand">
+        <span class="wf-brand-mark"><img src="../assets/logo-white.png" alt="潍坊市广告协会"></span>
+      </a>
+        <nav class="wf-nav" aria-label="主导航">
+          <a href="./index.html" class="wf-nav-item" data-nav-key="home" data-dom-id="nav-home">首页</a>
+          <a href="./about-new.html" class="wf-nav-item" data-nav-key="about" data-dom-id="nav-about">关于协会</a>
+          <a href="./news.html" class="wf-nav-item" data-nav-key="news" data-dom-id="nav-news" data-active="true">协会动态</a>
+          <a href="./policy.html" class="wf-nav-item" data-nav-key="policy" data-dom-id="nav-policy">政策法规</a>
+          <a href="./service.html" class="wf-nav-item" data-nav-key="service" data-dom-id="nav-service">会员服务</a>
+          <a href="./members.html" class="wf-nav-item" data-nav-key="member" data-dom-id="nav-member">会员风采</a>
+          <a href="./media.html" class="wf-nav-item wf-nav-highlight" data-nav-key="media" data-dom-id="nav-media">潍广通</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Banner ===== -->
+    <section class="wf-bg-section wf-bg-banner-news wf-bg-kenburns news-banner">
+      <img class="wf-bg-img" src="../assets/bg-news-banner.gif" alt="" aria-hidden="true">
+      <div class="wf-bg-orbs"><span class="wf-bg-orb o1"></span><span class="wf-bg-orb o2" style="background:radial-gradient(circle,rgba(83,152,255,.45) 0%,transparent 70%)"></span></div>
+      <div class="news-banner-inner">
+        <nav class="news-breadcrumb" aria-label="面包屑">
+          <a href="./index.html">首页</a>
+          <i data-lucide="chevron-right"></i>
+          <span class="news-breadcrumb-current">协会动态</span>
+        </nav>
+        <span class="news-banner-eyebrow">ASSOCIATION NEWS</span>
+        <h1>协会动态</h1>
+        <p class="news-banner-sub">了解协会最新资讯、通知公告与行业动态</p>
+      </div>
+    </section>
+
+    <h2 class="sr-only">协会动态资讯</h2>
+
+    <!-- ===== 两栏主体 ===== -->
+    <div class="news-layout">
+      <!-- 左栏：列表 -->
+      <div class="news-main">
+        <div class="news-tabs wf-reveal" role="tablist" aria-label="资讯分类">
+          <button class="news-tab" data-active="true" data-dom-id="tab-yw" role="tab" aria-selected="true">协会要闻</button>
+          <button class="news-tab" data-dom-id="tab-gg" role="tab" aria-selected="false">通知公告</button>
+          <button class="news-tab" data-dom-id="tab-zx" role="tab" aria-selected="false">行业资讯</button>
+        </div>
+
+        <div class="news-list" id="dynamic-news-list">
+          <article class="news-item wf-reveal wf-reveal-delay-1">
+            <div class="news-date">
+              <span class="news-date-day">15</span>
+              <span class="news-date-ym">2026.07</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">协会要闻</span></div>
+              <h3 class="news-item-title">协会召开2026年第一次理事会会议</h3>
+              <p class="news-item-excerpt">总结上半年工作，部署下半年重点任务，围绕会员服务、行业自律、政企桥梁等核心职能明确推进路径…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal wf-reveal-delay-2">
+            <div class="news-date">
+              <span class="news-date-day">10</span>
+              <span class="news-date-ym">2026.07</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">通知公告</span></div>
+              <h3 class="news-item-title">关于缴纳2026年度会费的通知</h3>
+              <p class="news-item-excerpt">请各会员单位于8月31日前完成会费缴纳，逾期未缴将影响年度会员权益享受与评优资格…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal wf-reveal-delay-3">
+            <div class="news-date">
+              <span class="news-date-day">08</span>
+              <span class="news-date-ym">2026.07</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">通知公告</span></div>
+              <h3 class="news-item-title">关于举办第六届广告创意大赛的通知</h3>
+              <p class="news-item-excerpt">面向全市广告企业征集优秀创意作品，设平面、视频、互动三大参赛类别，欢迎踊跃报名…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal">
+            <div class="news-date">
+              <span class="news-date-day">02</span>
+              <span class="news-date-ym">2026.07</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">行业资讯</span></div>
+              <h3 class="news-item-title">数字化转型重塑广告产业格局</h3>
+              <p class="news-item-excerpt">程序化购买、AIGC 正在改变广告投放逻辑，行业进入精准化、智能化营销新阶段…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal">
+            <div class="news-date">
+              <span class="news-date-day">28</span>
+              <span class="news-date-ym">2026.06</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">协会要闻</span></div>
+              <h3 class="news-item-title">潍坊市广告协会赴济南考察学习</h3>
+              <p class="news-item-excerpt">协会组织会员企业赴省协会交流，学习先进经验，拓展行业合作渠道，推动区域协同发展…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal">
+            <div class="news-date">
+              <span class="news-date-day">20</span>
+              <span class="news-date-ym">2026.06</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">行业资讯</span></div>
+              <h3 class="news-item-title">短视频营销成为品牌增长新引擎</h3>
+              <p class="news-item-excerpt">短视频平台广告收入持续高速增长，内容种草成为驱动消费决策的关键营销方式…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal">
+            <div class="news-date">
+              <span class="news-date-day">15</span>
+              <span class="news-date-ym">2026.06</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">协会要闻</span></div>
+              <h3 class="news-item-title">2026年度广告行业表彰大会顺利举行</h3>
+              <p class="news-item-excerpt">表彰优秀广告作品与突出贡献企业，树立行业标杆，激发创新活力与创作热情…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-item wf-reveal">
+            <div class="news-date">
+              <span class="news-date-day">08</span>
+              <span class="news-date-ym">2026.06</span>
+            </div>
+            <div class="news-content">
+              <div class="news-item-head"><span class="wf-card-tag">通知公告</span></div>
+              <h3 class="news-item-title">关于申报2026年度广告行业奖项的通知</h3>
+              <p class="news-item-excerpt">即日起接受奖项申报材料，截止日期为9月30日，欢迎广大会员单位踊跃申报…</p>
+              <a href="#" class="news-item-link">查看详情 <i data-lucide="arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 分页 -->
+        <nav class="news-pagination" aria-label="分页">
+          <a href="#" class="news-page"><i data-lucide="chevron-left"></i>上一页</a>
+          <a href="#" class="news-page" data-active="true">1</a>
+          <a href="#" class="news-page">2</a>
+          <a href="#" class="news-page">3</a>
+          <span class="news-page-ellipsis">…</span>
+          <a href="#" class="news-page">下一页<i data-lucide="chevron-right"></i></a>
+        </nav>
+      </div>
+
+      <!-- 右栏：侧边栏 -->
+      <aside class="news-sidebar" aria-label="协会动态侧边栏">
+        <!-- 热门资讯 -->
+        <div class="sidebar-card wf-reveal wf-reveal-delay-2">
+          <h3 class="sidebar-title"><i data-lucide="trending-up"></i>热门资讯</h3>
+          <div class="hot-list">
+            <a href="#" class="hot-item">
+              <span class="hot-rank">1</span>
+              <span class="hot-text">协会召开2026年第一次理事会会议</span>
+            </a>
+            <a href="#" class="hot-item">
+              <span class="hot-rank">2</span>
+              <span class="hot-text">关于举办第六届广告创意大赛的通知</span>
+            </a>
+            <a href="#" class="hot-item">
+              <span class="hot-rank">3</span>
+              <span class="hot-text">数字化转型重塑广告产业格局</span>
+            </a>
+            <a href="#" class="hot-item">
+              <span class="hot-rank">4</span>
+              <span class="hot-text">潍坊市广告协会赴济南考察学习</span>
+            </a>
+            <a href="#" class="hot-item">
+              <span class="hot-rank">5</span>
+              <span class="hot-text">短视频营销成为品牌增长新引擎</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 联系我们 -->
+        <div class="sidebar-card wf-reveal wf-reveal-delay-2">
+          <h3 class="sidebar-title"><i data-lucide="phone-call"></i>联系我们</h3>
+          <div class="contact-list">
+            <div class="contact-item"><i data-lucide="map-pin"></i><span>地址：潍坊市潍城区怡园路1666号401</span></div>
+            <div class="contact-item"><i data-lucide="phone"></i><span>电话：0536-8888XXX</span></div>
+            <div class="contact-item"><i data-lucide="mail"></i><span>邮箱：wfsggxh2026@163.com</span></div>
+          </div>
+          <a href="./service.html" class="wf-btn wf-btn-primary contact-btn">入会申请</a>
+        </div>
+
+        <!-- 关注我们 -->
+        <div class="sidebar-card wf-reveal wf-reveal-delay-2">
+          <h3 class="sidebar-title"><i data-lucide="bell"></i>关注我们</h3>
+          <div class="follow-qr"><i data-lucide="qr-code"></i></div>
+          <p class="follow-desc">扫码关注潍坊市广告协会官方微信公众号，获取更多行业资讯与服务</p>
+        </div>
+      </aside>
+     </div>
+   </main>
+
+  <!-- ============ SITE FOOTER ============ -->
+  <footer class="wf-site-footer">
+    <div class="wf-container wf-footer-grid">
+      <div class="wf-footer-col wf-footer-about">
+              <div class="wf-footer-brand">
+        <span class="wf-brand-mark"><img src="../assets/logo-white.png" alt="潍坊市广告协会"></span>
+      </div>
+        <p class="wf-footer-desc">潍坊市广告协会是经潍坊市行政审批服务局批准、潍坊市民政局登记注册，由潍坊市市场监督管理局作为业务主管单位的全市性、行业性、非营利性社会组织。</p>
+      </div>
+      <div class="wf-footer-col">
+        <h4 class="wf-footer-title">快速导航</h4>
+        <ul class="wf-footer-links">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./about-new.html">关于协会</a></li>
+          <li><a href="./news.html">协会动态</a></li>
+          <li><a href="./policy.html">政策法规</a></li>
+          <li><a href="./service.html">会员服务</a></li>
+          <li><a href="./members.html">会员风采</a></li>
+          <li><a href="./media.html">潍广通</a></li>
+          <li><a href="./contact.html" data-dom-id="footer-contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="wf-footer-col">
+        <h4 class="wf-footer-title">联系我们</h4>
+        <ul class="wf-footer-links wf-footer-contact">
+          <li><i data-lucide="map-pin" class="wf-ico-sm"></i>潍坊市潍城区怡园路1666号401</li>
+          <li><i data-lucide="phone" class="wf-ico-sm"></i>0536-8888XXX</li>
+          <li><i data-lucide="mail" class="wf-ico-sm"></i>wfsggxh2026@163.com</li>
+        </ul>
+      </div>
+      <div class="wf-footer-col wf-footer-qr">
+        <h4 class="wf-footer-title">关注我们</h4>
+        <div class="wf-qr-box"><img src="../assets/qrcode-wechat.jpg" alt="公众号二维码" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+        <span class="wf-qr-label">官方微信</span>
+      </div>
+    </div>
+    <div class="wf-footer-bottom">
+      <div class="wf-container wf-footer-bottom-inner">
+        <div class="wf-footer-friendly">
+          <span class="wf-footer-friendly-label">友情链接：</span>
+          <a href="#">中国广告协会</a>
+          <a href="#">山东省广告协会</a>
+          <a href="#">潍坊市市场监督管理局</a>
+          <a href="#">潍坊市广告产业园</a>
+        </div>
+        <p class="wf-footer-copy">© 2026 潍坊市广告协会 版权所有　鲁ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

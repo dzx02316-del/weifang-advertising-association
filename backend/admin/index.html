@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>潍坊市广告协会 - 内容管理后台</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 登录界面 -->
+    <div id="login-view" class="login-view">
+      <div class="login-card">
+        <div class="login-brand">
+          <img src="/assets/logo.png" alt="logo" class="login-logo">
+          <h1>潍广通内容管理后台</h1>
+          <p>潍坊市广告协会 · CMS v2.0</p>
+        </div>
+        <form id="login-form" class="login-form">
+          <div class="form-group">
+            <label>用户名</label>
+            <input type="text" id="login-username" placeholder="admin" required>
+          </div>
+          <div class="form-group">
+            <label>密码</label>
+            <input type="password" id="login-password" placeholder="admin123" required>
+          </div>
+          <div id="login-error" class="login-error"></div>
+          <button type="submit" class="btn btn-primary btn-block">登录</button>
+          <p class="login-tip">默认账号 admin / admin123</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- 主界面 -->
+    <div id="admin-view" class="admin-view hidden">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <img src="/assets/logo.png" alt="logo" class="sidebar-logo">
+          <div>
+            <div class="sidebar-title">潍广通 CMS</div>
+            <div class="sidebar-subtitle">内容管理后台</div>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" data-section="dashboard" class="nav-item active"><span class="nav-icon">⌘</span>控制台</a>
+          <a href="#" data-section="homepage" class="nav-item"><span class="nav-icon">🏠</span>首页板块</a>
+          <a href="#" data-section="news" class="nav-item"><span class="nav-icon">📰</span>协会新闻</a>
+          <a href="#" data-section="media" class="nav-item"><span class="nav-icon">🖼️</span>媒体资源</a>
+          <a href="#" data-section="members" class="nav-item"><span class="nav-icon">🏢</span>会员展示</a>
+          <a href="#" data-section="pages" class="nav-item"><span class="nav-icon">📄</span>单页内容</a>
+          <a href="#" data-section="stats" class="nav-item"><span class="nav-icon">📊</span>站点统计</a>
+        </nav>
+        <div class="sidebar-footer">
+          <span id="current-user">admin</span>
+          <button id="logout-btn" class="btn btn-ghost btn-sm">退出</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="main-header">
+          <h2 id="page-title">控制台</h2>
+          <div id="page-subtitle" class="page-subtitle"></div>
+        </header>
+
+        <!-- 控制台 -->
+        <section id="section-dashboard" class="content-section">
+          <div class="dashboard-cards">
+            <div class="stat-card"><div class="stat-label">新闻总数</div><div class="stat-value" id="dash-news-count">0</div></div>
+            <div class="stat-card"><div class="stat-label">媒体分类</div><div class="stat-value" id="dash-cat-count">0</div></div>
+            <div class="stat-card"><div class="stat-label">媒体点位</div><div class="stat-value" id="dash-point-count">0</div></div>
+            <div class="stat-card"><div class="stat-label">会员数量</div><div class="stat-value" id="dash-member-count">0</div></div>
+          </div>
+          <div class="welcome-card">
+            <h3>欢迎使用潍广通 CMS</h3>
+            <p>左侧导航选择对应板块进行内容编辑。所有改动即时保存并同步到前台。</p>
+            <p>前台预览：<a href="/" target="_blank">官网首页</a> · <a href="/pages/members.html" target="_blank">会员风采页</a> · <a href="/pages/media.html" target="_blank">潍广通页</a></p>
+          </div>
+        </section>
+
+        <!-- 首页板块 -->
+        <section id="section-homepage" class="content-section hidden">
+          <div class="section-toolbar">
+            <div class="tab-row" id="homepage-tabs"></div>
+          </div>
+          <div id="homepage-form" class="card-form"></div>
+        </section>
+
+        <!-- 新闻 -->
+        <section id="section-news" class="content-section hidden">
+          <div class="section-toolbar" style="display:flex;justify-content:space-between;align-items:center;">
+            <input id="news-search" class="search-input" placeholder="搜索新闻标题..." style="width:260px;">
+            <button class="btn btn-primary" id="news-add">+ 新增新闻</button>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead><tr><th style="width:44px;">#</th><th>标题</th><th>分类</th><th style="width:120px;">发布时间</th><th style="width:80px;">状态</th><th style="width:140px;">操作</th></tr></thead>
+              <tbody id="news-tbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 媒体资源 -->
+        <section id="section-media" class="content-section hidden">
+          <div class="section-toolbar" style="display:flex;justify-content:space-between;align-items:center;">
+            <span class="tip">点击分类标题可展开/收起，每行点位可独立编辑</span>
+            <div>
+              <button class="btn btn-primary btn-sm" id="media-cat-add">+ 新增分类</button>
+              <button class="btn btn-ghost btn-sm" id="media-point-add">+ 新增点位</button>
+            </div>
+          </div>
+          <div id="media-list" class="media-list"></div>
+        </section>
+
+        <!-- 会员 -->
+        <section id="section-members" class="content-section hidden">
+          <div class="section-toolbar" style="display:flex;justify-content:space-between;align-items:center;">
+            <input id="members-search" class="search-input" placeholder="搜索公司名称..." style="width:260px;">
+            <button class="btn btn-primary" id="member-add">+ 新增会员</button>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead><tr><th style="width:44px;">#</th><th>公司名称</th><th>行业</th><th>简介</th><th style="width:100px;">跳转</th><th style="width:80px;">状态</th><th style="width:140px;">操作</th></tr></thead>
+              <tbody id="members-tbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 单页内容 -->
+        <section id="section-pages" class="content-section hidden">
+          <div class="section-toolbar">
+            <div class="tab-row" id="pages-tabs"></div>
+          </div>
+          <div id="pages-form" class="card-form"></div>
+        </section>
+
+        <!-- 站点统计 -->
+        <section id="section-stats" class="content-section hidden">
+          <div class="section-toolbar">
+            <span class="tip">首页数据带数字（会员单位/服务案例/覆盖点位/行业经验）。修改后前台实时生效。</span>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Key</th><th>标签</th><th>数值</th><th>后缀</th><th style="width:120px;">排序</th><th style="width:140px;">操作</th></tr></thead>
+              <tbody id="stats-tbody"></tbody>
+            </table>
+          </div>
+          <div style="margin-top:16px;">
+            <button class="btn btn-primary" id="stat-add">+ 新增统计项</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- 通用 Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">编辑</h3>
+        <button class="modal-close" id="modal-close">×</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost" id="modal-cancel">取消</button>
+        <button class="btn btn-primary" id="modal-save">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>
